@@ -69,6 +69,20 @@
       .animate-fade-in-up {
         animation: fadeIn 1.5s ease-in;
       }
+      .animate-fade-in {
+        animation: fadeIn 1.5s ease-in;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
   </head>
   <body class="bg-black text-white">
@@ -106,8 +120,10 @@
             domine a arte de enlouquecer qualquer mulher.
           </p>
           <p class="text-lg font-semibold text-red-500 mb-6 sm:mb-8">
-            De R$139,60 por apenas
-            <span class="text-white bg-red-600 px-2 py-1 rounded">R$49,00</span>
+            <span class="text-white bg-red-600 px-2 py-1 rounded"
+              >R$100,00</span
+            >
+            o pacote completo com 3 e-books
           </p>
           <a
             href="#"
@@ -415,7 +431,7 @@
     </section>
 
     <!-- Seção: Bônus Exclusivos -->
-    <!-- Seção: Bônus Exclusivos -->
+
     <section class="py-20 px-6 bg-black text-center">
       <h2 class="text-4xl font-bold text-[#ff1e1e] mb-4">BÔNUS EXCLUSIVOS</h2>
       <p class="text-white text-xl font-semibold mb-12">SÓ HOJE!</p>
@@ -508,39 +524,39 @@
 
       <!-- Oferta do Pack -->
       <div
-        class="mt-12 bg-[#141416] text-white rounded-xl p-8 max-w-3xl mx-auto shadow-xl text-center"
+        class="mt-12 bg-[#141416] text-white rounded-xl p-6 sm:p-8 max-w-3xl mx-auto shadow-xl text-center"
       >
-        <h3 class="text-2xl font-bold mb-4">
+        <h3 class="text-2xl sm:text-3xl font-bold mb-4">
           COMPRE O PACK TODO POR APENAS
           <span class="text-red-500 font-bold">R$ 100</span>!
         </h3>
-        <p class="mb-6">
+        <p class="mb-6 text-sm sm:text-base">
           Leve todos os 3 livros com um desconto exclusivo. Oferta válida
           somente hoje!
         </p>
         <a
           href="#"
-          class="inline-block bg-red-600 hover:bg-red-700 text-white py-3 px-8 rounded-full font-bold text-lg shadow-lg transition transform hover:scale-105"
+          class="inline-block bg-red-600 hover:bg-red-700 text-white py-3 px-6 sm:px-8 rounded-full font-bold text-lg shadow-lg transition transform hover:scale-105"
         >
           QUERO O PACK COMPLETO
         </a>
 
         <!-- Galeria de capas -->
-        <div class="mt-6 flex justify-center gap-4">
+        <div class="mt-6 flex flex-wrap justify-center gap-4">
           <img
             src="assets/produto1.jpg"
             alt="Livro 1"
-            class="w-28 rounded-lg shadow-md hover:scale-105 transition"
+            class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
           />
           <img
             src="assets/produto2.jpg"
             alt="Livro 2"
-            class="w-28 rounded-lg shadow-md hover:scale-105 transition"
+            class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
           />
           <img
             src="assets/produto3.jpg"
             alt="Livro 3"
-            class="w-28 rounded-lg shadow-md hover:scale-105 transition"
+            class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
           />
         </div>
 
@@ -597,22 +613,5 @@
         </div>
       </div>
     </footer>
-
-    <style>
-      .animate-fade-in {
-        animation: fadeIn 1.5s ease-in;
-      }
-
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
   </body>
 </html>

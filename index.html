@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prazer Proibido - Desperte o Desejo</title>
-
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
     <!-- Fonte personalizada -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap"
@@ -23,16 +21,56 @@
           color: white;
         }
         50% {
-          color: #ef4444; /* red-500 do Tailwind */
-        }
+          color: #ef4444;
+        } /* red-500 do Tailwind */
       }
-
       .flash-red {
         animation: flash-red 1s infinite;
       }
+      .animate-fade-in {
+        animation: fadeIn 1.5s ease-in;
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 1.5s ease-in;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in {
+        animation: fadeIn 1.5s ease-in;
+      }
+      .animate-fade-in-up {
+        animation: fadeIn 1.5s ease-in;
+      }
     </style>
   </head>
-
   <body class="bg-black text-white">
     <!-- Hero Section -->
     <section
@@ -40,12 +78,8 @@
     >
       <!-- Imagem de fundo -->
       <div
-        class="absolute inset-0 bg-cover bg-center"
-        style="
-          background-image: url('assets/imagem1.jpg');
-          background-position: center top 20%;
-          background-size: cover;
-        "
+        class="absolute inset-0 bg-cover bg-center bg-[center_-40%] sm:bg-[center_top_20%]"
+        style="background-image: url('assets/imagem1.jpg')"
       ></div>
 
       <!-- Overlay escuro -->
@@ -55,43 +89,40 @@
 
       <!-- Conteúdo principal -->
       <div
-        class="relative z-20 flex flex-col md:flex-row items-center justify-between max-w-6xl w-full px-6 md:px-12"
+        class="relative z-20 flex flex-col-reverse sm:flex-row items-center justify-between max-w-6xl w-full px-6 sm:px-12 gap-8"
       >
         <!-- Texto -->
-        <div class="text-left max-w-xl animate-fade-in">
+        <div class="text-center sm:text-left max-w-xl animate-fade-in">
           <h1
-            class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 tracking-wide text-white"
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-4 sm:mb-6 tracking-wide text-white"
           >
             O método para ser o cara que
             <span class="text-red-600">nenhuma mulher esquece</span>.
           </h1>
-
           <p
-            class="text-lg sm:text-xl font-light mb-6 text-gray-300 leading-relaxed"
+            class="text-base sm:text-lg font-light mb-4 text-gray-300 leading-relaxed"
           >
             ✅ Torne-se o cara que todas querem e nenhum consegue superar —
             domine a arte de enlouquecer qualquer mulher.
           </p>
-
-          <p class="text-lg font-semibold text-red-500 mb-8">
+          <p class="text-lg font-semibold text-red-500 mb-6 sm:mb-8">
             De R$139,60 por apenas
             <span class="text-white bg-red-600 px-2 py-1 rounded">R$49,00</span>
           </p>
-
           <a
             href="#"
-            class="inline-block bg-red-700 hover:bg-red-800 hover:scale-105 transform transition duration-300 ease-in-out text-white py-3 px-8 rounded-full font-semibold text-lg shadow-lg hover:shadow-red-500/50"
+            class="inline-block bg-red-700 hover:bg-red-800 hover:scale-105 transform transition duration-300 ease-in-out text-white py-3 px-6 sm:px-8 rounded-full font-semibold text-lg shadow-lg hover:shadow-red-500/50"
           >
             🚀 QUERO DESCOBRIR AGORA
           </a>
         </div>
 
         <!-- Imagem lateral do produto -->
-        <div class="mt-10 md:mt-0 md:ml-8 animate-fade-in-up">
+        <div class="animate-fade-in-up w-64 sm:w-80 md:w-96 flex-shrink-0">
           <img
             src="assets/produto3.jpg"
             alt="Produto"
-            class="w-80 md:w-96 rounded-xl shadow-lg shadow-black/50 transform hover:scale-105 transition duration-300"
+            class="w-full rounded-xl shadow-lg shadow-black/50 transform hover:scale-105 transition duration-300"
           />
         </div>
       </div>
@@ -102,23 +133,17 @@
       ></div>
     </section>
 
-    <div
-      style="
-        height: 80px;
-        background: linear-gradient(to bottom, black, transparent);
-      "
-    ></div>
+    <div class="h-20 bg-gradient-to-b from-black to-transparent"></div>
 
     <!-- Section com GIF centralizado -->
     <section
-      class="relative py-20 px-6 text-center bg-cover bg-center z-0"
+      class="relative py-16 px-4 text-center bg-cover bg-center z-0"
       style="
         background-image: linear-gradient(to top, rgb(34, 0, 0), rgb(0, 0, 0)),
           url('assets/imagem7.png');
       "
     >
       <div class="max-w-4xl mx-auto">
-        <!-- Título -->
         <h2
           class="text-white text-2xl sm:text-3xl font-semibold leading-snug mb-3"
         >
@@ -127,16 +152,12 @@
             >O SEGREDO QUE ELA NUNCA TE CONTOU.</span
           >
         </h2>
-
-        <!-- Subtítulo -->
         <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
           E não... não tem nada a ver com dinheiro, beleza ou pegada bruta.
           <br />
           Tem a ver com <strong>entender a mente e o corpo feminino</strong> de
           forma real.
         </p>
-
-        <!-- GIF ou imagem -->
         <div class="w-full max-w-3xl mx-auto mb-10 relative">
           <img
             src="/assets/gif.gif"
@@ -144,17 +165,15 @@
             class="w-full h-auto object-cover rounded-lg shadow-lg"
           />
         </div>
-
-        <!-- Card embaixo do gif -->
         <div
           class="bg-gradient-to-b from-[#3a0000] to-[#150000] text-white rounded-xl shadow-md max-w-3xl mx-auto p-6 sm:p-8 text-base sm:text-lg leading-relaxed"
         >
-          <p class="mb-3">
+          <p class="mb-2">
             Mais de <strong>70%</strong> das mulheres nunca tiveram um orgasmo
             com um homem.
           </p>
-          <p class="mb-3">Elas fingem. Gemem no automático. Fazem cena.</p>
-          <p class="mb-3">E a culpa não é delas... nem sua.</p>
+          <p class="mb-2">Elas fingem. Gemem no automático. Fazem cena.</p>
+          <p class="mb-2">E a culpa não é delas... nem sua.</p>
           <p class="text-xl font-bold text-gray-100">
             É do método. E da falta dele.
           </p>
@@ -165,55 +184,48 @@
       ></div>
     </section>
 
-    <!-- Transição preta suave entre as seções -->
-    <div
-      style="
-        height: 80px;
-        background: linear-gradient(to bottom, black, transparent);
-      "
-    ></div>
+    <div class="h-20 bg-gradient-to-b from-black to-transparent"></div>
 
     <!-- Seção Cards Inspiracionais -->
     <section
-      class="relative py-20 px-6 text-center bg-cover bg-center z-0"
+      class="relative py-16 px-4 text-center bg-cover bg-center z-0"
       style="
         background-image: linear-gradient(to top, rgb(34, 0, 0), rgb(0, 0, 0)),
           url('assets/imagem7.png');
       "
     >
-      <div class="relative max-w-5xl mx-auto grid gap-12 sm:grid-cols-2 z-10">
+      <div class="relative max-w-5xl mx-auto grid gap-8 sm:grid-cols-2">
         <div
-          class="bg-zinc-900/70 p-8 rounded-2xl shadow-lg text-center backdrop-blur-md transform hover:-translate-y-2 hover:shadow-xl transition duration-300"
+          class="bg-zinc-900/70 p-6 sm:p-8 rounded-2xl shadow-lg text-center backdrop-blur-md transform hover:-translate-y-1 hover:shadow-xl transition duration-300"
         >
-          <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-white">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-white">
             Ela merece mais que pressa
           </h2>
-          <p class="text-gray-300 text-lg leading-relaxed">
+          <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
             O prazer dela é um mapa ainda pouco explorado.<br />
             Aprenda a guiar com firmeza e sensibilidade.<br />
             O verdadeiro amante domina, não apenas toca.
           </p>
         </div>
-
         <div
-          class="bg-zinc-900/70 p-8 rounded-2xl shadow-lg text-center backdrop-blur-md transform hover:-translate-y-2 hover:shadow-xl transition duration-300"
+          class="bg-zinc-900/70 p-6 sm:p-8 rounded-2xl shadow-lg text-center backdrop-blur-md transform hover:-translate-y-1 hover:shadow-xl transition duration-300"
         >
-          <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-white">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-white">
             Você nasceu pra ser um bostinha ou um rei?
           </h2>
-          <p class="text-gray-300 text-lg leading-relaxed mb-4">
-            É hora de sair da zona de conforto.<br />
-            Aprenda a se vestir, falar e pensar como quem comanda.
+          <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-2">
+            É hora de sair da zona de conforto.<br />Aprenda a se vestir, falar
+            e pensar como quem comanda.
           </p>
-          <p class="text-gray-400 text-base leading-relaxed mb-4">
-            Isso não é sobre gastar rios de dinheiro.<br />
-            É sobre ter visão, cultura e referência.
+          <p class="text-gray-400 text-sm leading-relaxed mb-2">
+            Isso não é sobre gastar rios de dinheiro.<br />É sobre ter visão,
+            cultura e referência.
           </p>
-          <p class="text-gray-400 text-base leading-relaxed mb-4">
-            Aprenda a se vestir de forma magnética, mesmo com o básico.<br />
-            Entenda como a elite se posiciona sem deixar de ser você mesmo.
+          <p class="text-gray-400 text-sm leading-relaxed mb-2">
+            Aprenda a se vestir de forma magnética, mesmo com o básico.<br />Entenda
+            como a elite se posiciona sem deixar de ser você mesmo.
           </p>
-          <p class="text-gray-300 text-lg leading-relaxed font-semibold">
+          <p class="text-gray-300 text-base sm:text-lg font-semibold">
             Porque
             <span class="text-white"
               >não é o que você veste,<br />mas como você veste.</span
@@ -221,8 +233,6 @@
           </p>
         </div>
       </div>
-
-      <!-- Fade-out no final da seção -->
       <div
         class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"
       ></div>

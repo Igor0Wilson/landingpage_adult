@@ -120,10 +120,8 @@
             domine a arte de enlouquecer qualquer mulher.
           </p>
           <p class="text-lg font-semibold text-red-500 mb-6 sm:mb-8">
-            <span class="text-white bg-red-600 px-2 py-1 rounded"
-              >R$100,00</span
-            >
-            o pacote completo com 3 e-books
+            <span class="text-white bg-red-600 px-2 py-1 rounded">R$10,00</span>
+            Para deixar ela louca e nunca esquecer de voce
           </p>
           <a
             href="#"
@@ -133,12 +131,20 @@
           </a>
         </div>
 
-        <!-- Imagem lateral do produto -->
-        <div class="animate-fade-in-up w-64 sm:w-80 md:w-96 flex-shrink-0">
+        <!-- Coluna com duas imagens -->
+        <div
+          class="animate-fade-in-up flex flex-col items-center gap-6 w-64 sm:w-80 md:w-96 flex-shrink-0"
+        >
           <img
-            src="assets/produto3.jpg"
+            src="assets/imagem15.jpg"
             alt="Produto"
-            class="w-full rounded-xl shadow-lg shadow-black/50 transform hover:scale-105 transition duration-300"
+            class="w-full rounded-xl shadow-lg shadow-black/50 transform hover:scale-105 transition duration-300 -translate-x-100"
+          />
+
+          <img
+            src="assets/imagem14.jpg"
+            alt="Produto Extra"
+            class="w-full rounded-xl shadow-lg shadow-black/50 transform hover:scale-105 transition duration-300 translate-x-10"
           />
         </div>
       </div>
@@ -153,46 +159,63 @@
 
     <!-- Section com GIF centralizado -->
     <section
-      class="relative py-16 px-4 text-center bg-cover bg-center z-0"
+      class="relative py-20 px-6 bg-cover bg-center z-0"
       style="
-        background-image: linear-gradient(to top, rgb(34, 0, 0), rgb(0, 0, 0)),
+        background-image: linear-gradient(
+            to top,
+            rgba(34, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.98)
+          ),
           url('assets/imagem7.png');
       "
     >
-      <div class="max-w-4xl mx-auto">
-        <h2
-          class="text-white text-2xl sm:text-3xl font-semibold leading-snug mb-3"
-        >
-          VOCÊ ESTÁ A UM PASSO DE DESBLOQUEAR
-          <span class="text-red-600 font-extrabold"
-            >O SEGREDO QUE ELA NUNCA TE CONTOU.</span
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Imagem com moldura -->
+        <div class="relative flex justify-center lg:justify-start">
+          <!-- Moldura -->
+          <div
+            class="absolute -top-8 -left-8 w-[400px] h-[550px] border-4 border-red-600 rounded-xl z-0"
+          ></div>
+          <!-- Foto -->
+          <div
+            class="relative z-10 rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300"
           >
-        </h2>
-        <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
-          E não... não tem nada a ver com dinheiro, beleza ou pegada bruta.
-          <br />
-          Tem a ver com <strong>entender a mente e o corpo feminino</strong> de
-          forma real.
-        </p>
-        <div class="w-full max-w-3xl mx-auto mb-10 relative">
-          <img
-            src="/assets/gif.gif"
-            alt="Gif ilustrativo"
-            class="w-full h-auto object-cover rounded-lg shadow-lg"
-          />
+            <img
+              src="assets/imagem12.jpg"
+              alt="Imagem destaque"
+              class="w-[400px] h-[550px] object-cover"
+            />
+          </div>
         </div>
-        <div
-          class="bg-gradient-to-b from-[#3a0000] to-[#150000] text-white rounded-xl shadow-md max-w-3xl mx-auto p-6 sm:p-8 text-base sm:text-lg leading-relaxed"
-        >
-          <p class="mb-2">
-            Mais de <strong>70%</strong> das mulheres nunca tiveram um orgasmo
-            com um homem.
+
+        <!-- Conteúdo -->
+        <div class="text-white text-center lg:text-left">
+          <h2
+            class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-snug mb-4"
+          >
+            VOCÊ ESTÁ A UM PASSO DE DESBLOQUEAR
+            <span class="text-red-500">O SEGREDO QUE ELA NUNCA TE CONTOU.</span>
+          </h2>
+          <p class="text-gray-300 text-lg leading-relaxed mb-6">
+            E não... não tem nada a ver com dinheiro, beleza ou pegada bruta.
+            <br />
+            Tem a ver com
+            <strong>entender a mente e o corpo feminino</strong> de forma real.
           </p>
-          <p class="mb-2">Elas fingem. Gemem no automático. Fazem cena.</p>
-          <p class="mb-2">E a culpa não é delas... nem sua.</p>
-          <p class="text-xl font-bold text-gray-100">
-            É do método. E da falta dele.
-          </p>
+
+          <div
+            class="bg-gradient-to-br from-[#4d0000] to-[#1a0000] rounded-2xl shadow-2xl p-6 border border-red-900"
+          >
+            <p class="mb-2">
+              Mais de <strong class="text-red-400">70%</strong> das mulheres
+              nunca tiveram um orgasmo com um homem.
+            </p>
+            <p class="mb-2">Elas fingem. Gemem no automático. Fazem cena.</p>
+            <p class="mb-4">E a culpa não é delas... nem sua.</p>
+            <p class="text-xl font-extrabold">É do método. E da falta dele.</p>
+          </div>
         </div>
       </div>
       <div
@@ -200,234 +223,85 @@
       ></div>
     </section>
 
-    <div class="h-20 bg-gradient-to-b from-black to-transparent"></div>
+    <section class="py-20 px-6 bg-black text-center">
+      <h2 class="text-4xl font-bold text-[#ff1e1e] mb-4">BÔNUS EXCLUSIVOS</h2>
+      <p class="text-white text-xl font-semibold mb-12">SÓ HOJE!</p>
 
-    <!-- Seção Cards Inspiracionais -->
-    <section
-      class="relative py-16 px-4 text-center bg-cover bg-center z-0"
-      style="
-        background-image: linear-gradient(to top, rgb(34, 0, 0), rgb(0, 0, 0)),
-          url('assets/imagem7.png');
-      "
-    >
-      <div class="relative max-w-5xl mx-auto grid gap-8 sm:grid-cols-2">
+      <div class="flex flex-col gap-8 max-w-6xl mx-auto">
         <div
-          class="bg-zinc-900/70 p-6 sm:p-8 rounded-2xl shadow-lg text-center backdrop-blur-md transform hover:-translate-y-1 hover:shadow-xl transition duration-300"
+          class="flex flex-col md:flex-row bg-zinc-900 rounded-xl overflow-hidden shadow-lg"
         >
-          <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-white">
-            Ela merece mais que pressa
-          </h2>
-          <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
-            O prazer dela é um mapa ainda pouco explorado.<br />
-            Aprenda a guiar com firmeza e sensibilidade.<br />
-            O verdadeiro amante domina, não apenas toca.
-          </p>
-        </div>
-        <div
-          class="bg-zinc-900/70 p-6 sm:p-8 rounded-2xl shadow-lg text-center backdrop-blur-md transform hover:-translate-y-1 hover:shadow-xl transition duration-300"
-        >
-          <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-white">
-            Você nasceu pra ser um bostinha ou um rei?
-          </h2>
-          <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-2">
-            É hora de sair da zona de conforto.<br />Aprenda a se vestir, falar
-            e pensar como quem comanda.
-          </p>
-          <p class="text-gray-400 text-sm leading-relaxed mb-2">
-            Isso não é sobre gastar rios de dinheiro.<br />É sobre ter visão,
-            cultura e referência.
-          </p>
-          <p class="text-gray-400 text-sm leading-relaxed mb-2">
-            Aprenda a se vestir de forma magnética, mesmo com o básico.<br />Entenda
-            como a elite se posiciona sem deixar de ser você mesmo.
-          </p>
-          <p class="text-gray-300 text-base sm:text-lg font-semibold">
-            Porque
-            <span class="text-white"
-              >não é o que você veste,<br />mas como você veste.</span
+          <div class="md:w-1/3">
+            <img
+              src="assets/produto2.jpg"
+              alt="Novo Livro"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="p-6 text-left md:w-2/3 flex flex-col">
+            <h3
+              class="text-lg font-bold text-[#ff1e1e] mb-4 uppercase leading-tight"
             >
-          </p>
+              Desafio do menage perfeito
+            </h3>
+            <p class="text-sm mb-4 text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque eu augue nec odio dictum imperdiet. Vivamus at mi
+              vitae magna condimentum ullamcorper nec sed dui. Sed laoreet
+              malesuada mi vel ultricies. Phasellus in felis at magna posuere
+              consequat vitae ac magna.
+            </p>
+            <p class="text-[#ff1e1e] font-bold text-sm">(Valor: R$ 10,00)</p>
+          </div>
         </div>
       </div>
-      <div
-        class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"
-      ></div>
     </section>
 
-    <!-- Transição preta suave entre as seções -->
-    <div
-      style="
-        height: 80px;
-        background: linear-gradient(to bottom, black, transparent);
-      "
-    ></div>
-
     <section
-      class="relative py-20 px-6 bg-cover bg-center"
-      style="
-        background-image: linear-gradient(to top, rgb(34, 0, 0), rgb(0, 0, 0)),
-          url('assets/imagem2.png');
-      "
+      class="relative py-20 px-6 bg-gradient-to-b from-black via-[#1a0000] to-black text-center"
     >
-      <div class="absolute inset-0 bg-black/70 z-0"></div>
-
       <div
-        class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10"
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8"
       >
-        <!-- Imagem à esquerda -->
-        <div class="flex-shrink-0 w-full md:w-1/3">
-          <img
-            src="/assets/imagem8.jpg"
-            alt="Foto ilustrativa"
-            class="w-full rounded-3xl shadow-2xl object-cover transition-transform duration-300 hover:scale-105"
-            style="max-height: 520px"
-          />
-        </div>
-
-        <!-- Card à direita -->
-        <div
-          class="bg-black/50 backdrop-blur-lg p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 w-full md:w-2/3"
-          style="margin-left: 3rem"
-        >
-          <h2 class="text-4xl font-extrabold text-red-600 mb-4">
-            MENOS BLA BLA BLA E MAIS RESULTADO
+        <!-- Conteúdo (agora à esquerda) -->
+        <div class="text-left">
+          <h2
+            class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6"
+          >
+            VOCÊ ESTÁ A UM PASSO DE DESBLOQUEAR
+            <span class="text-red-500">O SEGREDO QUE ELA NUNCA TE CONTOU.</span>
           </h2>
-          <p
-            class="text-white text-lg sm:text-xl leading-relaxed font-semibold mb-6"
-          >
-            Quer mudar de verdade? Comece agora. Sem desculpas.<br />
-            <span class="text-red-500">PASSO 1</span> – Descubra sua arma
-            secreta: <strong>Seu rosto</strong>
+          <p class="text-gray-300 mb-4">
+            E não... não tem nada a ver com dinheiro, beleza ou pegada bruta.
+            Tem a ver com
+            <span class="font-semibold"
+              >entender a mente e o corpo feminino</span
+            >
+            de forma real.
           </p>
-          <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
-            <em>Pergunta-chave:</em> <strong>Qual é sua melhor cara?</strong>
-          </p>
-          <p class="text-gray-400 text-base sm:text-lg leading-relaxed mb-4">
-            Mostre fotos para uma amiga confiável. Pergunte:
-          </p>
-          <p class="text-gray-200 text-base sm:text-lg leading-relaxed mb-4">
-            "Com qual cara eu pareço mais gostoso?"<br />
-            "Com qual dessas fotos você me pegaria sem pensar duas vezes?"
-          </p>
-          <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
-            A resposta é ouro. Essa é a cara que você vai usar para conquistar
-            QUALQUER mulher.
-          </p>
-        </div>
-      </div>
-
-      <!-- Fade-out no final da seção -->
-      <div
-        class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"
-      ></div>
-    </section>
-
-    <section
-      class="relative py-20 px-6 bg-[#330000] text-center"
-      style="
-        background-image: linear-gradient(to top, rgb(34, 0, 0), rgb(0, 0, 0)),
-          url('assets/imagem2.png');
-      "
-    >
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-12">
-        O QUE VOCÊ VAI <span class="text-yellow-500">APRENDER</span> <br />
-        DENTRO DO TREINAMENTO:
-      </h2>
-
-      <div
-        class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
-      >
-        <!-- Card Template -->
-        <div
-          class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
-        >
-          <div class="h-[300px] w-full overflow-hidden">
-            <img
-              src="assets/imagem3.jpg"
-              alt="Mapa do Prazer"
-              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div
-            class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
-          >
-            <h3 class="font-semibold text-lg mb-1">MAPA DO PRAZER</h3>
-            <p class="text-gray-300">
-              O GPS do prazer que só 1% dos homens conhece.
+          <div class="bg-red-900/60 p-4 rounded-lg mt-6">
+            <p class="text-gray-100">
+              Mais de <span class="font-bold text-yellow-400">70%</span> das
+              mulheres nunca tiveram um orgasmo com um homem. Elas fingem. Gemem
+              no automático. Fazem cena. E a culpa não é delas... nem sua.
+              <span class="font-bold text-white block mt-2"
+                >É do método. E da falta dele.</span
+              >
             </p>
           </div>
         </div>
 
-        <!-- Repita os próximos cards com a mesma estrutura -->
-        <div
-          class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
-        >
-          <div class="h-[300px] w-full overflow-hidden">
+        <!-- Imagem (agora à direita) -->
+        <div class="flex justify-center">
+          <div class="relative border-2 border-red-500 rounded-lg p-1">
             <img
-              src="assets/imagem4.jpg"
-              alt="A Anatomia do Prazer"
-              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              src="assets/imagem11.jpg"
+              alt="Imagem ilustrativa"
+              class="rounded-md w-full h-auto object-cover"
             />
-          </div>
-          <div
-            class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
-          >
-            <h3 class="font-semibold text-lg mb-1">A ANATOMIA DO PRAZER</h3>
-            <p class="text-gray-300">
-              As 7 zonas mais sensíveis ignoradas pelas mãos masculinas.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
-        >
-          <div class="h-[300px] w-full overflow-hidden">
-            <img
-              src="assets/imagem5.jpg"
-              alt="O Toque Perfeito"
-              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div
-            class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
-          >
-            <h3 class="font-semibold text-lg mb-1">O TOQUE PERFEITO</h3>
-            <p class="text-gray-300">
-              A técnica que transforma seu toque em botão de explosão de prazer.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
-        >
-          <div class="h-[300px] w-full overflow-hidden">
-            <img
-              src="assets/imagem6.jpg"
-              alt="Super Orgasmo"
-              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div
-            class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
-          >
-            <h3 class="font-semibold text-lg mb-1">SUPER ORGASMO</h3>
-            <p class="text-gray-300">
-              Como causar orgasmos múltiplos mesmo sem penetração.
-            </p>
           </div>
         </div>
       </div>
-
-      <div class="mt-12 text-white text-lg font-semibold">
-        E MUITO MAIS!<br />
-        <span class="text-yellow-400">São 16 módulos completos</span> com vídeos
-        práticos, linguagem direta e técnicas que funcionam.
-      </div>
-      <div
-        class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"
-      ></div>
     </section>
 
     <!-- Seção: Bônus Exclusivos -->
@@ -437,41 +311,12 @@
       <p class="text-white text-xl font-semibold mb-12">SÓ HOJE!</p>
 
       <div class="flex flex-col gap-8 max-w-6xl mx-auto">
-        <!-- Card 1 -->
         <div
           class="flex flex-col md:flex-row bg-zinc-900 rounded-xl overflow-hidden shadow-lg"
         >
           <div class="md:w-1/3">
             <img
               src="assets/produto1.jpg"
-              alt="Jogando com Elas Nível Neymar"
-              class="w-full h-auto"
-            />
-          </div>
-          <div class="p-6 text-left md:w-2/3 flex flex-col">
-            <h3
-              class="text-lg font-bold text-[#ff1e1e] mb-4 uppercase leading-tight"
-            >
-              Jogando com Elas Nível Neymar
-            </h3>
-            <p class="text-sm mb-4 text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id
-              sapien sed nisl viverra lacinia. Sed ac nisi nec odio bibendum
-              accumsan. Cras posuere facilisis nisi, in bibendum nulla vulputate
-              at. Vivamus malesuada, est sit amet ultrices pharetra, purus
-              sapien interdum mi, nec porta lacus mi ut lorem.
-            </p>
-            <p class="text-[#ff1e1e] font-bold text-sm">(Valor: R$ 10,00)</p>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div
-          class="flex flex-col md:flex-row bg-zinc-900 rounded-xl overflow-hidden shadow-lg"
-        >
-          <div class="md:w-1/3">
-            <img
-              src="assets/produto2.jpg"
               alt="Desafio do Ménage Perfeito"
               class="w-full h-auto"
             />
@@ -492,35 +337,214 @@
             <p class="text-[#ff1e1e] font-bold text-sm">(Valor: R$ 29,99)</p>
           </div>
         </div>
+      </div>
 
-        <!-- Card 3 -->
-        <div
-          class="flex flex-col md:flex-row bg-zinc-900 rounded-xl overflow-hidden shadow-lg"
-        >
-          <div class="md:w-1/3">
+      <section
+        class="relative py-20 px-6 bg-gradient-to-b from-black via-[#1a0000] to-black text-center"
+      >
+        <div class="max-w-5xl mx-auto">
+          <!-- Categoria -->
+          <p class="text-red-500 font-semibold mb-2">Gestão</p>
+
+          <!-- Título -->
+          <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-4">
+            Lorem Ipsum: 12 dicas para aumentar as vendas
+          </h1>
+
+          <!-- Subtítulo -->
+          <p class="text-gray-300 text-lg mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <!-- Autor e ações -->
+          <div class="flex flex-wrap items-center justify-between mb-6 gap-4">
+            <div class="flex items-center gap-3">
+              <div
+                class="bg-red-600 w-8 h-8 flex items-center justify-center rounded-full"
+              >
+                <span class="text-white font-bold">A</span>
+              </div>
+              <p class="text-gray-300 text-sm">
+                Equipe Lorem • 3/9/2024 • 16 min de leitura
+              </p>
+            </div>
+            <div>
+              <button
+                class="flex items-center gap-2 text-gray-400 hover:text-white transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 12v.01M12 4v.01M20 12v.01M12 20v.01M5.64 5.64l.01.01M18.36 18.36l.01.01M5.64 18.36l.01-.01M18.36 5.64l.01-.01"
+                  />
+                </svg>
+                Compartilhar
+              </button>
+            </div>
+          </div>
+
+          <!-- Imagem -->
+          <div class="rounded-lg overflow-hidden">
             <img
-              src="assets/produto3.jpg"
-              alt="Novo Livro"
-              class="w-full h-auto"
+              src="assets/imagem13.jpg"
+              alt="Imagem destaque"
+              class="w-full object-cover"
             />
           </div>
-          <div class="p-6 text-left md:w-2/3 flex flex-col">
-            <h3
-              class="text-lg font-bold text-[#ff1e1e] mb-4 uppercase leading-tight"
-            >
-              Título do Novo Livro
-            </h3>
-            <p class="text-sm mb-4 text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque eu augue nec odio dictum imperdiet. Vivamus at mi
-              vitae magna condimentum ullamcorper nec sed dui. Sed laoreet
-              malesuada mi vel ultricies. Phasellus in felis at magna posuere
-              consequat vitae ac magna.
-            </p>
-            <p class="text-[#ff1e1e] font-bold text-sm">(Valor: R$ XXX)</p>
+        </div>
+      </section>
+
+      <section class="py-20 px-6 bg-black text-center">
+        <h2 class="text-4xl font-bold text-[#ff1e1e] mb-4">BÔNUS EXCLUSIVOS</h2>
+        <p class="text-white text-xl font-semibold mb-12">SÓ HOJE!</p>
+
+        <div class="flex flex-col gap-8 max-w-6xl mx-auto">
+          <div
+            class="flex flex-col md:flex-row bg-zinc-900 rounded-xl overflow-hidden shadow-lg"
+          >
+            <div class="md:w-1/3">
+              <img
+                src="assets/imagem8.jpg"
+                alt="Novo Livro"
+                class="w-full h-auto"
+              />
+            </div>
+            <div class="p-6 text-left md:w-2/3 flex flex-col">
+              <h3
+                class="text-lg font-bold text-[#ff1e1e] mb-4 uppercase leading-tight"
+              >
+                Desafio do menage perfeito
+              </h3>
+              <p class="text-sm mb-4 text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque eu augue nec odio dictum imperdiet. Vivamus at mi
+                vitae magna condimentum ullamcorper nec sed dui. Sed laoreet
+                malesuada mi vel ultricies. Phasellus in felis at magna posuere
+                consequat vitae ac magna.
+              </p>
+              <p class="text-[#ff1e1e] font-bold text-sm">(Valor: R$ 10,00)</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section
+        class="relative py-20 px-6 bg-[#330000] text-center"
+        style="
+          background-image: linear-gradient(to top, rgb(34, 0, 0), rgb(0, 0, 0)),
+            url('assets/imagem2.png');
+        "
+      >
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-12">
+          O QUE VOCÊ VAI <span class="text-yellow-500">APRENDER</span> <br />
+          DENTRO DO TREINAMENTO:
+        </h2>
+
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
+        >
+          <!-- Card Template -->
+          <div
+            class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
+          >
+            <div class="h-[300px] w-full overflow-hidden">
+              <img
+                src="assets/imagem3.jpg"
+                alt="Mapa do Prazer"
+                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div
+              class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
+            >
+              <h3 class="font-semibold text-lg mb-1">MAPA DO PRAZER</h3>
+              <p class="text-gray-300">
+                O GPS do prazer que só 1% dos homens conhece.
+              </p>
+            </div>
+          </div>
+
+          <!-- Repita os próximos cards com a mesma estrutura -->
+          <div
+            class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
+          >
+            <div class="h-[300px] w-full overflow-hidden">
+              <img
+                src="assets/imagem4.jpg"
+                alt="A Anatomia do Prazer"
+                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div
+              class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
+            >
+              <h3 class="font-semibold text-lg mb-1">A ANATOMIA DO PRAZER</h3>
+              <p class="text-gray-300">
+                As 7 zonas mais sensíveis ignoradas pelas mãos masculinas.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
+          >
+            <div class="h-[300px] w-full overflow-hidden">
+              <img
+                src="assets/imagem5.jpg"
+                alt="O Toque Perfeito"
+                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div
+              class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
+            >
+              <h3 class="font-semibold text-lg mb-1">O TOQUE PERFEITO</h3>
+              <p class="text-gray-300">
+                A técnica que transforma seu toque em botão de explosão de
+                prazer.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
+          >
+            <div class="h-[300px] w-full overflow-hidden">
+              <img
+                src="assets/imagem6.jpg"
+                alt="Super Orgasmo"
+                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div
+              class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
+            >
+              <h3 class="font-semibold text-lg mb-1">SUPER ORGASMO</h3>
+              <p class="text-gray-300">
+                Como causar orgasmos múltiplos mesmo sem penetração.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-white text-lg font-semibold">
+          E MUITO MAIS!<br />
+          <span class="text-yellow-400">São 16 módulos completos</span> com
+          vídeos práticos, linguagem direta e técnicas que funcionam.
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"
+        ></div>
+      </section>
 
       <!-- Oferta do Pack -->
       <div
@@ -544,17 +568,17 @@
         <!-- Galeria de capas -->
         <div class="mt-6 flex flex-wrap justify-center gap-4">
           <img
-            src="assets/produto1.jpg"
+            src="assets/produto2.jpg"
             alt="Livro 1"
             class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
           />
           <img
-            src="assets/produto2.jpg"
+            src="assets/produto1.jpg"
             alt="Livro 2"
             class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
           />
           <img
-            src="assets/produto3.jpg"
+            src="assets/imagem8.jpg"
             alt="Livro 3"
             class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
           />
@@ -565,7 +589,14 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="relative py-20 px-6 bg-black text-center">
+
+    <section
+      class="relative py-20 px-6 bg-black text-center"
+      style="
+        background-image: linear-gradient(to top, rgb(34, 0, 0), rgb(0, 0, 0)),
+          url('assets/imagem2.png');
+      "
+    >
       <div class="max-w-3xl mx-auto">
         <h2 class="text-4xl font-extrabold mb-6 flash-red">
           Está pronto para ser inesquecível?

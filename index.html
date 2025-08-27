@@ -1,1078 +1,883 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prazer Proibido - Desperte o Desejo</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fonte personalizada -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
-    <style>
-      /* Aumentar fonte global e melhorar espaçamento */
-      body {
-        font-family: "Montserrat", sans-serif;
-        font-size: 1.125rem; /* 18px base */
-        line-height: 1.8;
-      }
-    
-      h1, h2, h3, h4, h5, h6 {
-        line-height: 1.2;
-      }
-    
-      /* Botões maiores */
-      .btn-action {
-        font-size: 1.125rem; /* 18px */
-        padding: 0.875rem 2rem;
-      }
-    
-      /* Cards e seções mais respiráveis */
-      .section-padding {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-      }
-    
-      /* Melhor visualização no mobile */
-      @media (max-width: 768px) {
-        body {
-          font-size: 1rem; /* 16px */
-        }
-        h2 {
-          font-size: 2rem; /* maior destaque */
-        }
-        h3 {
-          font-size: 1.5rem;
-        }
-        .btn-action {
-          width: 100%;
-          padding: 1rem 0;
-          font-size: 1.125rem;
-        }
-        .text-sm {
-          font-size: 0.875rem; /* 14px */
-        }
-      }
-    
-      /* Animações suaves */
-      .fade-in {
-        animation: fadeIn 1.5s ease-in-out;
-      }
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-    </style>
-    
-  </head>
-  <body class="bg-black text-white">
-        <!-- Hero Section -->
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Prazer Proibido - Desperte o Desejo</title>
+      <!-- Tailwind CSS CDN -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- Fonte personalizada -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+         />
+      <style>
+         /* Aumentar fonte global e melhorar espaçamento */
+         body {
+         font-family: "Montserrat", sans-serif;
+         font-size: 1.125rem; /* 18px base */
+         line-height: 1.8;
+         }
+         h1, h2, h3, h4, h5, h6 {
+         line-height: 1.2;
+         }
+         /* Botões maiores */
+         .btn-action {
+         font-size: 1.125rem; /* 18px */
+         padding: 0.875rem 2rem;
+         }
+         /* Cards e seções mais respiráveis */
+         .section-padding {
+         padding-top: 4rem;
+         padding-bottom: 4rem;
+         }
+         /* Melhor visualização no mobile */
+         @media (max-width: 768px) {
+         body {
+         font-size: 1rem; /* 16px */
+         }
+         h2 {
+         font-size: 2rem; /* maior destaque */
+         }
+         h3 {
+         font-size: 1.5rem;
+         }
+         .btn-action {
+         width: 100%;
+         padding: 1rem 0;
+         font-size: 1.125rem;
+         }
+         .text-sm {
+         font-size: 0.875rem; /* 14px */
+         }
+         }
+         /* Animações suaves */
+         .fade-in {
+         animation: fadeIn 1.5s ease-in-out;
+         }
+         @keyframes fadeIn {
+         from { opacity: 0; transform: translateY(20px); }
+         to { opacity: 1; transform: translateY(0); }
+         }
+      </style>
+   </head>
+   <body class="bg-black text-white">
+      <!-- Hero Section -->
       <section
-        class="relative min-h-screen w-full flex flex-col sm:flex-row items-center justify-center overflow-hidden bg-black pt-20 sm:pt-12"
-      >
-        <!-- Imagem de fundo -->
-        <div
-          class="absolute inset-0 bg-cover bg-center bg-[center_-40%] sm:bg-[center_top_20%]"
-          style="background-image: url('assets/imagem1.jpg')"
-        ></div>
-      
-        <!-- Overlay escuro -->
-        <div
-          class="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/95 z-10"
-        ></div>
-      
-        <!-- Conteúdo principal -->
-        <div
-          class="relative z-20 flex flex-col sm:flex-row items-center justify-between max-w-6xl w-full px-6 sm:px-12 gap-10"
-        >
-
-          <div class="flex-shrink-0 flex justify-center w-full sm:w-auto">
-            <img
-              src="assets/produto3.jpg"
-              alt="Capa do Livro"
-              class="w-48 sm:w-56 md:w-64 lg:w-80 xl:w-96 rounded-2xl shadow-2xl border-4 border-red-600 transform hover:scale-105 transition duration-300"
-            />
-          </div>
-
-      
-          <!-- Texto -->
-          <div class="text-center sm:text-left max-w-2xl w-full">
-            <p class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-blue-400 leading-snug tracking-wide">
-              Entenda realmente como ser o homem que
-            </p>
-      
-            <h2
-              class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 tracking-tight text-white leading-snug"
+         class="relative min-h-screen w-full flex flex-col sm:flex-row items-center justify-center overflow-hidden bg-black pt-20 sm:pt-12"
+         >
+         <!-- Imagem de fundo -->
+         <div
+            class="absolute inset-0 bg-cover bg-center bg-[center_-40%] sm:bg-[center_top_20%]"
+            style="background-image: url('assets/imagem1.jpg')"
+            ></div>
+         <!-- Overlay escuro -->
+         <div
+            class="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/95 z-10"
+            ></div>
+         <!-- Conteúdo principal -->
+         <div
+            class="relative z-20 flex flex-col sm:flex-row items-center justify-between max-w-6xl w-full px-6 sm:px-12 gap-10"
             >
-              <span class="text-red-600">MANIPULA A MENTE</span><br />
-              <span class="text-red-600">DE QUALQUER MULHER.</span>
-            </h2>
-      
-            <p class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 text-blue-400 leading-snug">
-              Desde uma piranha na balada a uma modelo top em um evento.
-            </p>
-      
-            <p class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-blue-400 leading-snug">
-              TRANSFORME A SUA MENTE EM UMA ARMA.
-            </p>
-      
-            <p class="text-lg sm:text-xl md:text-2xl font-light mb-6 text-gray-300 leading-relaxed tracking-wide">
-              ❌ NÃO É SOBRE CARRO, DINHEIRO NEM BELEZA.<br />
-              ✅ É SOBRE
-              <span class="text-red-500 font-semibold">MANIPULAÇÃO PSICOLÓGICA.</span>
-            </p>
-      
-            <!-- PREÇO DESTACADO -->
-            <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-red-600 mb-6 tracking-tight">
-              🔥 R$9,99 🔥
-            </p>
-      
-            <a
-              href="#"
-              class="inline-block bg-red-700 hover:bg-red-800 hover:scale-105 transform transition duration-300 ease-in-out text-white py-3 px-8 rounded-full font-semibold text-lg sm:text-xl shadow-lg hover:shadow-red-500/50 mb-6"
-            >
-              🚀 QUERO DESCOBRIR AGORA
-            </a>
-      
-            <!-- FOTOS ABAIXO DO BOTÃO -->
-            <div class="flex justify-center sm:justify-start gap-4 flex-wrap mt-6 sm:mt-8">
-              <img
-                src="assets/imagem6.jpg"
-                alt="Mulher 2"
-                class="w-32 sm:w-36 md:w-40 rounded-xl shadow-lg"
-              />
-              <img
-                src="assets/imagem15.jpg"
-                alt="Mulher 3"
-                class="w-32 sm:w-36 md:w-40 rounded-xl shadow-lg"
-              />
-              <img
-                src="assets/imagem22.jpg"
-                alt="Mulher 3"
-                class="w-32 sm:w-36 md:w-40 rounded-xl shadow-lg"
-              />
-              
+            <div class="flex-shrink-0 flex justify-center w-full sm:w-auto">
+               <img
+                  src="assets/produto3.jpg"
+                  alt="Capa do Livro"
+                  class="w-48 sm:w-56 md:w-64 lg:w-80 xl:w-96 rounded-2xl shadow-2xl border-4 border-red-600 transform hover:scale-105 transition duration-300"
+                  />
             </div>
-          </div>
-        </div>
-      
-        <!-- Fade-out inferior -->
-        <div
-          class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"
-        ></div>
-      </section>      
-      
-    <!-- SECTION DO VÍDEO -->
-    <section
-      class="relative w-full py-16 px-6 sm:px-12 bg-black flex flex-col items-center justify-center text-center"
-    >
-      <div class="max-w-5xl w-full relative z-20">
-        <!-- Título -->
-        <h2
-          class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 text-white leading-snug"
-        >
-          Entenda agora o que diferencia um
-          <span class="text-red-600">MALANDRO</span> de um
-          <span class="text-red-600">OTÁRIO</span>
-        </h2>
-
-        <!-- Container do vídeo -->
-        <div
-          class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg border-4 border-red-600"
-        >
-          <video
-            controls
-            poster="assets/thumb-video.jpg"
-            class="w-full h-full object-cover"
-          >
-            <source src="assets/video.mp4" type="video/mp4" />
-            Seu navegador não suporta a reprodução de vídeos.
-          </video>
-        </div>
-      </div>
-    </section>
-
-    <div class="h-20 bg-gradient-to-b from-black to-transparent"></div>
-
-    <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
-      <!-- Primeira imagem -->
-      <img
-        src="assets/imagem21.jpg"
-        alt="12 Segredos Para Deixar Mulheres Loucas Por Você"
-        class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-      />
-
-      <!-- Segunda imagem -->
-      <img
-        src="assets/imagem20.jpg"
-        alt="Imagem destaque"
-        class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-      />
-
-      <img
-        src="assets/imagem23.jpg"
-        alt="Imagem destaque"
-        class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-      />
-    </div>
-
-    <!-- Section com GIF centralizado -->
-    <section
-      class="relative py-16 sm:py-20 px-6 sm:px-12 bg-cover bg-center z-0"
-      style="background-image: linear-gradient(to top, rgba(34,0,0,0.95), rgba(0,0,0,0.98)), url('assets/imagem7.png');"
-    >
-      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
-        <!-- Imagem com moldura -->
-        <div class="relative flex justify-center lg:justify-start">
-          <!-- Moldura -->
-          <div
-            class="absolute -top-4 -left-4 w-[320px] sm:w-[360px] md:w-[400px] h-[440px] sm:h-[500px] md:h-[540px] border-4 border-red-600 rounded-xl z-0"
-          ></div>
-          <!-- Foto -->
-          <div
-            class="relative z-10 rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out"
-          >
-            <img
-              src="assets/imagem3.jpg"
-              alt="Imagem destaque"
-              class="w-[320px] sm:w-[360px] md:w-[400px] h-[440px] sm:h-[500px] md:h-[540px] object-cover"
-            />
-          </div>
-        </div>
-
-        <!-- Texto -->
-        <div class="text-white text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
-          <!-- TEXTO BRANCO -->
-          <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
-            Nunca mais cair no
-            <span class="text-red-500 font-extrabold">bla-bla-bla de uma mulher</span>.<br />
-            As mulheres que você deseja,
-            <span class="text-red-500 font-extrabold">pra você sempre de 4</span>.
-          </h2>
-        
-          <!-- TEXTO LARANJA -->
-          <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
-            Ela não quer um idiota que faz tudo pra ela. Isso é um funcionário,
-            não um homem de verdade.<br class="hidden sm:block" />
-            Ela quer ser dominada, pelo homem que aperta os gatilhos certos na
-            cabeça dela e deixa ela submissa.<br />
-            <strong class="text-red-400 font-semibold">Vire esse homem AGORA.</strong>
-          </h2>
-        </div>        
-      </div>
-
-      <!-- Fade-out inferior -->
-      <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
-    </section>
-
-    <section class="py-16 sm:py-20 px-6 sm:px-12 bg-black text-center">
-      <!-- Título -->
-      <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ff1e1e] mb-6 tracking-tight">
-        10 ARMAS EXPERT DO TESÃO
-      </h2>
-      <p class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-14">
-        APROVEITE!
-      </p>
-    
-      <div class="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto rounded-xl overflow-hidden text-left gap-10 md:gap-14">
-        
-        <!-- FOTO -->
-        <div class="md:w-1/2 flex justify-center bg-black p-4 sm:p-6">
-          <img
-            src="assets/produto3.jpg"
-            alt="10 Armas Expert do Tesão"
-            class="w-full max-w-lg md:max-w-2xl lg:max-w-3xl rounded-2xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out"
-          />
-        </div>        
-    
-        <!-- CONTEÚDO -->
-        <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-black">
-    
-          <!-- TEXTO -->
-          <p class="text-gray-200 text-lg sm:text-xl md:text-2xl mb-6 leading-relaxed font-medium">
-            <strong>O<span class="text-[#ff1e1e]"> 10 ARMAS EXPERT DO TESÃO</span> é a sua porta de entrada
-            para ser um <span class="text-[#ff1e1e]">homem de verdade</span>, que escolhe a dedo a mulher que quer —
-            não o que fica se rastejando.  
-            <br><br>
-            Esse passo já vai te dar as armas necessárias para
-            fazer ela nunca mais esquecer de você</strong>.
-          </p>
-          
-          <!-- LISTA -->
-          <ul class="space-y-4 text-lg sm:text-xl md:text-2xl leading-relaxed font-semibold">
-            <li class="flex items-start">
-              <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-              <span class="text-white">Estratégias para <strong class="text-[#ff1e1e]">começar uma conversa</strong> como um expert do tesão.</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-              <span class="text-white">Como <strong class="text-[#ff1e1e]">manter a conexão quente</strong> e levar ela pra casa no mesmo dia.</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-              <span class="text-white">Como fazer ela sentir que <strong class="text-[#ff1e1e]">precisa de você</strong> desde o primeiro dia.</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-              <span class="text-white">O início do caminho para <strong class="text-[#ff1e1e]">nunca mais tomar um fora</strong>.</span>
-            </li>
-          </ul>
-    
-          <!-- PREÇO + BOTÃO -->
-          <div class="text-center mt-10">
-            <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#ff1e1e] mb-6">
-              Por apenas R$ 9,99
-            </p>
-            <button class="bg-[#ff1e1e] hover:bg-red-700 text-white font-bold py-4 px-12 rounded-xl transition duration-300 ease-in-out text-xl sm:text-2xl shadow-lg">
-              QUERO GARANTIR!
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>    
-    
-    <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
-      <!-- Primeira imagem -->
-      <img
-        src="assets/imagem24.jpg"
-        alt="12 Segredos Para Deixar Mulheres Loucas Por Você"
-        class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-      />
-
-      <!-- Segunda imagem -->
-      <img
-        src="assets/imagem25.jpg"
-        alt="Imagem destaque"
-        class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-      />
-
-      <img
-        src="assets/imagem14.jpg"
-        alt="Imagem destaque"
-        class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-      />
-    </div>
-
-    <section
-      class="relative py-20 px-6 sm:px-12 bg-gradient-to-b from-black via-[#1a0000] to-black text-center"
-    >
-      <div
-        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12"
-      >
-        <!-- Conteúdo (esquerda) -->
-        <div class="text-left">
-          <!-- Título -->
-          <h2
-            class="text-3xl sm:text-4xl md:text-4xl font-extrabold text-white leading-snug mb-6 tracking-tight"
-          >
-            ELA NÃO É "ESPECIAL".<br />
-            <span class="text-red-500">VOCÊ QUE É.</span>
-          </h2>
-    
-          <!-- Texto -->
-          <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
-            Entenda de uma vez, quando você coloca ela no trono, é o momento
-            que ela te bota no bolso. O rei sempre veio na frente da rainha.
-            Pare de inverter a ordem das coisas. Comece já a entender o porque
-            a maior parte dos homens ainda se rastejam atrás de mulheres que
-            se ajoelham pra outros caras.
-          </h2>
-        </div>
-    
-        <!-- Imagem (direita) -->
-        <div class="flex justify-center">
-          <div class="relative border-2 border-red-500 rounded-lg p-1">
-            <img
-              src="assets/imagem11.jpg"
-              alt="Imagem ilustrativa"
-              class="rounded-md w-full h-auto object-cover shadow-lg"
-            />
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
-    <!-- Primeira imagem -->
-    <img
-      src="assets/imagem35.jpg"
-      alt="12 Segredos Para Deixar Mulheres Loucas Por Você"
-      class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-    />
-
-    <!-- Segunda imagem -->
-    <img
-      src="assets/imagem36.jpg"
-      alt="Imagem destaque"
-      class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-    />
-
-    <img
-      src="assets/imagem37.jpg"
-      alt="Imagem destaque"
-      class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-    />
-  </div>
-
-  <section class="py-16 sm:py-20 px-6 sm:px-12 bg-black text-center">
-    <!-- Título -->
-    <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ff1e1e] mb-6 tracking-tight">
-      DESAFIO DO MÉNAGE PERFEITO
-    </h2>
-    <p class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-14">
-      ENTRE NA EXPERIÊNCIA!
-    </p>
-  
-    <div class="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto rounded-xl overflow-hidden text-left gap-10 md:gap-14">
-      
-      <!-- FOTO -->
-      <div class="md:w-1/2 flex justify-center bg-black p-4 sm:p-6">
-        <img
-          src="assets/produto2.jpg"
-          alt="Desafio do Ménage Perfeito"
-          class="w-full max-w-lg md:max-w-2xl lg:max-w-3xl rounded-2xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out"
-        />
-      </div>        
-  
-      <!-- CONTEÚDO -->
-      <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-black">
-  
-        <!-- TEXTO -->
-        <p class="text-gray-200 text-lg sm:text-xl md:text-2xl mb-6 leading-relaxed font-medium">
-          <strong><span class="text-[#ff1e1e]">O Desafio do Ménage Perfeito</span> é a continuação da trajetória do homem que quer viver <span class="text-[#ff1e1e]">TODO SEU POTENCIAL.</span><br><br>
-          Não importa se você já tem uma relação, é <span class="text-[#ff1e1e]">casado, solteiro ou namora</span> — você vai aprender como <span class="text-[#ff1e1e]">entrar na mente dela e fazer ela sentir a vontade de ter a experiência a três.</span><br><br>
-          <span class="text-[#ff1e1e]">Aprenda a ser quem manda</span>, e parar de ser mandado.</strong>
-        </p>
-  
-        <!-- LISTA -->
-        <!-- LISTA REAJUSTADA -->
-        <ul class="space-y-4 text-lg sm:text-xl md:text-2xl leading-relaxed font-semibold">
-          <li class="flex items-start">
-            <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-            <span class="text-white">
-              Estratégias passo-a-passo para <strong class="text-[#ff1e1e]">levar duas mulheres</strong> pra casa no primeiro dia.
-            </span>
-          </li>
-          <li class="flex items-start">
-            <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-            <span class="text-white">
-              Como fazer a <strong class="text-[#ff1e1e]">SUA MULHER</strong> sentir vontade de ficar com outra mulher, despertando desejo e curiosidade.
-            </span>
-          </li>
-          <li class="flex items-start">
-            <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-            <span class="text-white">
-              Técnicas para que a <strong class="text-[#ff1e1e]">SUA MULHER</strong> vá pra guerra e te traga mais mulheres sem esforço.
-            </span>
-          </li>
-          <li class="flex items-start">
-            <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-            <span class="text-white">
-              <strong class="text-[#ff1e1e]">Domínio total:</strong> a técnica do Ménage perfeito para que elas queiram repetir sempre.
-            </span>
-          </li>
-        </ul>
-
-  
-        <!-- PREÇO + BOTÃO -->
-        <div class="text-center mt-10">
-          <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#ff1e1e] mb-6">
-            🔥 Por apenas R$ 29,99 🔥
-          </p>
-          <button class="bg-[#ff1e1e] hover:bg-red-700 text-white font-bold py-4 px-12 rounded-xl transition duration-300 ease-in-out text-xl sm:text-2xl shadow-lg">
-            🚀 QUERO PARTICIPAR!
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
-    <!-- Primeira imagem -->
-    <img
-      src="assets/imagem27.jpg"
-      alt="12 Segredos Para Deixar Mulheres Loucas Por Você"
-      class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-    />
-
-    <!-- Segunda imagem -->
-    <img
-      src="assets/imagem28.jpg"
-      alt="Imagem destaque"
-      class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-    />
-
-    <img
-      src="assets/imagem29.jpg"
-      alt="Imagem destaque"
-      class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-    />
-  </div>
-
-  <section
-    class="relative py-20 px-6 sm:px-12 bg-gradient-to-b from-black via-[#1a0000] to-black text-center"
-  >
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-      <!-- Conteúdo (esquerda) -->
-      <div class="text-left">
-        <!-- Título principal -->
-        <h2
-          class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#ff1e1e] mb-6 leading-snug uppercase"
-        >
-          ELA NUNCA VAI TE CONFESSAR ISSO
-        </h2>
-
-        <!-- Texto introdutório -->
-        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
-          Ela quer mostrar que tem o poder,
-        </h2>
-
-        <!-- Destaque central -->
-        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
-          Mas no fundo toda mulher quer um homem que
-          <span class="text-[#ff1e1e]">MANDA NA P*RRA TODA</span>.
-        </h2>
-
-        <!-- Complemento -->
-        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
-          Desde o começo dos tempos o homem é a energia dominante, e o erro do
-          principiante é acreditar que, por causa dos tempos modernos, ela que
-          manda. Isso é tudo fachada. <br /><br />
-          Aprenda a ler uma mulher como um livro, e ser o autor que continua essa
-          história. O poder é seu — e se ainda não é, entenda como agarrar ele de
-          volta.
-        </h2>
-      </div>
-
-      <!-- Imagem (direita) -->
-      <div class="flex justify-center">
-        <div class="relative border-2 border-[#ff1e1e] rounded-lg p-1">
-          <img
-            src="assets/imagem26.jpg"
-            alt="Imagem ilustrativa"
-            class="rounded-md w-full h-auto object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
-    <!-- Primeira imagem -->
-    <img
-      src="assets/imagem31.jpg"
-      alt="12 Segredos Para Deixar Mulheres Loucas Por Você"
-      class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-    />
-
-    <!-- Segunda imagem -->
-    <img
-      src="assets/imagem33.jpg"
-      alt="Imagem destaque"
-      class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-    />
-
-    <img
-      src="assets/imagem34.jpg"
-      alt="Imagem destaque"
-      class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-    />
-  </div>
-
-    <section class="py-16 sm:py-20 px-6 sm:px-12 bg-black text-center">
-      <!-- Título -->
-      <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ff1e1e] mb-6 tracking-tight">
-        JOGANDO NO NÍVEL DO NEYMAR
-      </h2>
-      <p class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-14">
-        APROVEITE!
-      </p>
-    
-      <div class="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto rounded-xl overflow-hidden text-left gap-10 md:gap-14">
-        
-        <!-- FOTO -->
-        <div class="md:w-1/2 flex justify-center bg-black p-4 sm:p-6">
-          <img
-            src="assets/produto1.jpg"
-            alt="Jogando no Nível do Neymar"
-            class="w-full max-w-md md:max-w-lg lg:max-w-xl rounded-2xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out"
-          />
-        </div>        
-    
-        <!-- CONTEÚDO -->
-        <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-black">
-          <!-- Título chamativo -->
-          <h3 class="text-3xl sm:text-4xl font-extrabold text-white uppercase mb-6 leading-snug">
-            Nunca mais cair no <span class="text-[#ff1e1e]">bla-bla-bla de uma mulher</span>.<br>
-            As mulheres que você deseja, <span class="text-[#ff1e1e]">pra você sempre de 4</span>.
-          </h3>
-    
-          <!-- Texto impactante -->
-          <p class="text-gray-200 text-lg sm:text-xl md:text-2xl mb-6 leading-relaxed font-medium">
-            <strong>Ela não quer um idiota que faz tudo pra ela.</strong><br>
-            <span class="text-[#ff1e1e] font-bold">Isso é um funcionário, não um homem de verdade.</span><br>
-            <strong>Ela quer ser dominada, pelo homem que aperta os gatilhos certos na cabeça dela e deixa ela submissa.</strong>
-          </p>
-    
-          <!-- Lista de destaques (opcional) -->
-          <ul class="space-y-4 text-lg sm:text-xl md:text-2xl leading-relaxed font-semibold mb-6">
-            <li class="flex items-start">
-              <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-              <span class="text-white">Domine a atenção e o desejo de qualquer mulher <strong class="text-[#ff1e1e]">desde o primeiro contato</strong>.</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-              <span class="text-white">Use <strong class="text-[#ff1e1e]">gatilhos psicológicos</strong> para que ela queira se submeter e obedecer.</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-              <span class="text-white">Torne-se o homem que as mulheres <strong class="text-[#ff1e1e]">não conseguem resistir</strong>.</span>
-            </li>
-          </ul>
-          
-    
-          <!-- Preço + botão -->
-          <div class="text-center mt-6">
-            <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#ff1e1e] mb-4">
-              🔥 Por apenas R$ 49,99 🔥
-            </p>
-            <button class="bg-[#ff1e1e] hover:bg-red-700 text-white font-bold py-4 px-12 rounded-xl transition duration-300 ease-in-out text-xl sm:text-2xl shadow-lg hover:shadow-red-500/40">
-              🚀 QUERO GARANTIR!
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    <section class="relative py-20 px-6 sm:px-12 bg-gradient-to-b from-black via-[#1a0000] to-black text-center">
-      <div class="max-w-5xl mx-auto">
-        <!-- Imagens lado a lado -->
-        <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
-          <!-- Primeira imagem -->
-          <img
-            src="assets/imagem17.jpg"
+            <!-- Texto -->
+            <div class="text-center sm:text-left max-w-2xl w-full">
+               <p class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-blue-400 leading-snug tracking-wide">
+                  Entenda realmente como ser o homem que
+               </p>
+               <h2
+                  class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 tracking-tight text-white leading-snug"
+                  >
+                  <span class="text-red-600">MANIPULA A MENTE</span><br />
+                  <span class="text-red-600">DE QUALQUER MULHER.</span>
+               </h2>
+               <p class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 text-blue-400 leading-snug">
+                  Desde uma piranha na balada a uma modelo top em um evento.
+               </p>
+               <p class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-blue-400 leading-snug">
+                  TRANSFORME A SUA MENTE EM UMA ARMA.
+               </p>
+               <p class="text-lg sm:text-xl md:text-2xl font-light mb-6 text-gray-300 leading-relaxed tracking-wide">
+                  ❌ NÃO É SOBRE CARRO, DINHEIRO NEM BELEZA.<br />
+                  ✅ É SOBRE
+                  <span class="text-red-500 font-semibold">MANIPULAÇÃO PSICOLÓGICA.</span>
+               </p>
+               <!-- PREÇO DESTACADO -->
+               <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-red-600 mb-6 tracking-tight">
+                  🔥 R$9,99 🔥
+               </p>
+               <a
+                  href="#"
+                  class="inline-block bg-red-700 hover:bg-red-800 hover:scale-105 transform transition duration-300 ease-in-out text-white py-3 px-8 rounded-full font-semibold text-lg sm:text-xl shadow-lg hover:shadow-red-500/50 mb-6"
+                  >
+               🚀 QUERO DESCOBRIR AGORA
+               </a>
+               <!-- FOTOS ABAIXO DO BOTÃO -->
+               <div class="flex justify-center sm:justify-start gap-4 flex-wrap mt-6 sm:mt-8">
+                  <img
+                     src="assets/imagem6.jpg"
+                     alt="Mulher 2"
+                     class="w-32 sm:w-36 md:w-40 rounded-xl shadow-lg"
+                     />
+                  <img
+                     src="assets/imagem15.jpg"
+                     alt="Mulher 3"
+                     class="w-32 sm:w-36 md:w-40 rounded-xl shadow-lg"
+                     />
+                  <img
+                     src="assets/imagem22.jpg"
+                     alt="Mulher 3"
+                     class="w-32 sm:w-36 md:w-40 rounded-xl shadow-lg"
+                     />
+               </div>
+            </div>
+         </div>
+         <!-- Fade-out inferior -->
+         <div
+            class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"
+            ></div>
+      </section>
+      <!-- SECTION DO VÍDEO -->
+      <section
+         class="relative w-full py-16 px-6 sm:px-12 bg-black flex flex-col items-center justify-center text-center"
+         >
+         <div class="max-w-5xl w-full relative z-20">
+            <!-- Título -->
+            <h2
+               class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 text-white leading-snug"
+               >
+               Entenda agora o que diferencia um
+               <span class="text-red-600">MALANDRO</span> de um
+               <span class="text-red-600">OTÁRIO</span>
+            </h2>
+            <!-- Container do vídeo -->
+            <div
+               class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg border-4 border-red-600"
+               >
+               <video
+                  controls
+                  poster="assets/thumb-video.jpg"
+                  class="w-full h-full object-cover"
+                  >
+                  <source src="assets/video.mp4" type="video/mp4" />
+                  Seu navegador não suporta a reprodução de vídeos.
+               </video>
+            </div>
+         </div>
+      </section>
+      <div class="h-20 bg-gradient-to-b from-black to-transparent"></div>
+      <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
+         <!-- Primeira imagem -->
+         <img
+            src="assets/imagem41.jpg"
             alt="12 Segredos Para Deixar Mulheres Loucas Por Você"
             class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-          />
-    
-          <!-- Segunda imagem -->
-          <img
-            src="assets/imagem18.jpg"
-            alt="Imagem destaque"
-            class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-          />
-
-          <img
-            src="assets/imagem30.jpg"
-            alt="Imagem destaque"
-            class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-          />
-        </div>
-    
-        <!-- Subtítulo -->
-        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
-          Descubra técnicas poderosas para entender a mente e o corpo feminino,
-          criar desejo irresistível e conduzir momentos de prazer intenso. Aprenda
-          como despertar paixão, aumentar a excitação e se tornar inesquecível na
-          vida sexual dela.
-        </h2>
-    
-        <!-- Texto Laranja -->
-        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
-          <span class="text-[#ff1e1e]">Tamanho do peito, da bunda, altura ou cor do cabelo, quem escolhe é você.
-          Entenda, você merece a mulher que deseja, e o que te afasta de conseguir
-          isso é ter o conhecimento pra ter elas pensando em você todo santo dia.</span>
-          <br />
-          <span class="underline">Aprenda isso agora</span>
-        </h2>
-    
-        <!-- Autor e ações -->
-        <div class="flex flex-wrap items-center justify-between mb-6 gap-4">
-          <div>
-            <button
-              class="flex items-center gap-2 text-gray-400 hover:text-white transition"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 sm:h-7 sm:w-7"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4 12v.01M12 4v.01M20 12v.01M12 20v.01M5.64 5.64l.01.01M18.36 18.36l.01.01M5.64 18.36l.01-.01M18.36 5.64l.01-.01"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>    
-    
-    <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
-      <!-- Primeira imagem -->
-      <img
-        src="assets/imagem38.jpg"
-        alt="12 Segredos Para Deixar Mulheres Loucas Por Você"
-        class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-      />
-  
-      <!-- Segunda imagem -->
-      <img
-        src="assets/imagem39.jpg"
-        alt="Imagem destaque"
-        class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-      />
-  
-      <img
-        src="assets/imagem40.jpg"
-        alt="Imagem destaque"
-        class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
-      />
-    </div>
-  
-
-    <section class="py-16 sm:py-20 px-6 sm:px-12 bg-black text-center">
-      <!-- Título -->
-      <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ff1e1e] mb-6 tracking-tight">
-        O MANUAL PROIBIDO DO PRAZER
-      </h2>
-      <p class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-14">
-        SÓ HOJE!
-      </p>
-    
-      <div class="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto rounded-xl overflow-hidden text-left gap-10 md:gap-14">
+            />
+         <!-- Segunda imagem -->
         
-        <!-- FOTO -->
-        <div class="md:w-1/2 flex justify-center bg-black p-4 sm:p-6">
-          <img
-            src="assets/imagem8.jpg"
-            alt="O Manual Proibido do Prazer"
-            class="w-full max-w-md md:max-w-lg lg:max-w-xl rounded-2xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out"
-          />
-        </div>        
-    
-        <!-- CONTEÚDO -->
-        <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-black">
-
-    
-          <!-- Texto impactante -->
-          <p class="text-gray-200 text-lg sm:text-xl md:text-2xl mb-6 leading-relaxed font-medium">
-            <strong>O<span class="text-[#ff1e1e]"> Manual Proibido do Prazer</span> é o passo final para o <span class="text-[#ff1e1e]">homem que quer ser um maestro em enlouquecer e manipular qualquer mulher. </span> 
-            <span class="text-[#ff1e1e]">Aqui você recebe o DNA masculino completo</span>, tornando-se a versão mais quente e dominante de você todos os dias.</strong>
-          </p>
-          <p class="text-gray-200 text-lg sm:text-xl md:text-2xl mb-6 leading-relaxed font-medium">
-            <strong>Contexto, técnicas e estratégias que completam sua jornada de poder e sedução. Seja inesquecível em qualquer situação e faça a concorrência chorar.
-          </p>
-    
-          <!-- Lista de destaques -->
-          <ul class="space-y-4 text-lg sm:text-xl md:text-2xl leading-relaxed font-semibold mb-6">
-            <li class="flex items-start">
-              <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-              <span class="text-white">Dono da putaria: <strong class="text-[#ff1e1e]">escolha as mulheres que você quiser</strong> sem perder tempo.</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-              <span class="text-white"><strong class="text-[#ff1e1e]">DNA masculino:</strong> seja o homem que sabe se vestir, falar e agir como um rei.</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-              <span class="text-white"><strong class="text-[#ff1e1e]">Tiro da sniper:</strong> nunca mais errar e escolher a mulher errada.</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
-              <span class="text-white"><strong class="text-[#ff1e1e]">Áurea superior:</strong> seja inesquecível em qualquer ocasião.</span>
-            </li>
-          </ul>             
-    
-          <!-- Preço + botão -->
-          <div class="text-center mt-6">
-            <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#ff1e1e] mb-4">
-              🔥 Por apenas R$ 79,99 🔥
-            </p>
-            <button class="bg-[#ff1e1e] hover:bg-red-700 text-white font-bold py-4 px-12 rounded-xl transition duration-300 ease-in-out text-xl sm:text-2xl shadow-lg hover:shadow-red-500/40">
-              🚀 QUERO GARANTIR!
-            </button>
-          </div>
-        </div>
       </div>
-    </section>
-
-    <section
-      class="relative py-20 px-6 bg-[#330000] text-center"
-      style="
-        background-image: linear-gradient(to top, rgb(34, 0, 0), rgb(0, 0, 0)),
-          url('assets/imagem2.png');
-      "
-    >
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-12">
-        Completando todos,<br /> <span class="text-yellow-500">você ja virou EXPERT em:</span> 
-      </h2>
-
+      <!-- Section com GIF centralizado -->
+      <section
+         class="relative py-16 sm:py-20 px-6 sm:px-12 bg-cover bg-center z-0"
+         style="background-image: linear-gradient(to top, rgba(34,0,0,0.95), rgba(0,0,0,0.98)), url('assets/imagem7.png');"
+         >
+         <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            <!-- Imagem com moldura -->
+            <div class="relative flex justify-center lg:justify-start">
+               <!-- Moldura -->
+               <div
+                  class="absolute -top-4 -left-4 w-[320px] sm:w-[360px] md:w-[400px] h-[440px] sm:h-[500px] md:h-[540px] border-4 border-red-600 rounded-xl z-0"
+                  ></div>
+               <!-- Foto -->
+               <div
+                  class="relative z-10 rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out"
+                  >
+                  <img
+                     src="assets/imagem3.jpg"
+                     alt="Imagem destaque"
+                     class="w-[320px] sm:w-[360px] md:w-[400px] h-[440px] sm:h-[500px] md:h-[540px] object-cover"
+                     />
+               </div>
+            </div>
+            <!-- Texto -->
+            <div class="text-white text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
+               <!-- TEXTO BRANCO -->
+               <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
+                  Nunca mais cair no
+                  <span class="text-red-500 font-extrabold">bla-bla-bla de uma mulher</span>.<br />
+                  As mulheres que você deseja,
+                  <span class="text-red-500 font-extrabold">pra você sempre de 4</span>.
+               </h2>
+               <!-- TEXTO LARANJA -->
+               <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
+                  Ela não quer um idiota que faz tudo pra ela. Isso é um funcionário,
+                  não um homem de verdade.<br class="hidden sm:block" />
+                  Ela quer ser dominada, pelo homem que aperta os gatilhos certos na
+                  cabeça dela e deixa ela submissa.<br />
+                  <strong class="text-red-400 font-semibold">Vire esse homem AGORA.</strong>
+               </h2>
+            </div>
+         </div>
+         <!-- Fade-out inferior -->
+         <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
+      </section>
+      <section class="py-16 sm:py-20 px-6 sm:px-12 bg-black text-center">
+         <!-- Título -->
+         <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ff1e1e] mb-6 tracking-tight">
+            10 ARMAS EXPERT DO TESÃO
+         </h2>
+         <p class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-14">
+            APROVEITE!
+         </p>
+         <div class="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto rounded-xl overflow-hidden text-left gap-10 md:gap-14">
+            <!-- FOTO -->
+            <div class="md:w-1/2 flex justify-center bg-black p-4 sm:p-6">
+               <img
+                  src="assets/produto3.jpg"
+                  alt="10 Armas Expert do Tesão"
+                  class="w-full max-w-lg md:max-w-2xl lg:max-w-3xl rounded-2xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out"
+                  />
+            </div>
+            <!-- CONTEÚDO -->
+            <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-black">
+               <!-- TEXTO -->
+               <p class="text-gray-200 text-lg sm:text-xl md:text-2xl mb-6 leading-relaxed font-medium">
+                  <strong>O<span class="text-[#ff1e1e]"> 10 ARMAS EXPERT DO TESÃO</span> é a sua porta de entrada
+                  para ser um <span class="text-[#ff1e1e]">homem de verdade</span>, que escolhe a dedo a mulher que quer —
+                  não o que fica se rastejando.  
+                  <br><br>
+                  Esse passo já vai te dar as armas necessárias para
+                  fazer ela nunca mais esquecer de você</strong>.
+               </p>
+               <!-- LISTA -->
+               <ul class="space-y-4 text-lg sm:text-xl md:text-2xl leading-relaxed font-semibold">
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white">Estratégias para <strong class="text-[#ff1e1e]">começar uma conversa</strong> como um expert do tesão.</span>
+                  </li>
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white">Como <strong class="text-[#ff1e1e]">manter a conexão quente</strong> e levar ela pra casa no mesmo dia.</span>
+                  </li>
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white">Como fazer ela sentir que <strong class="text-[#ff1e1e]">precisa de você</strong> desde o primeiro dia.</span>
+                  </li>
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white">O início do caminho para <strong class="text-[#ff1e1e]">nunca mais tomar um fora</strong>.</span>
+                  </li>
+               </ul>
+               <!-- PREÇO + BOTÃO -->
+               <div class="text-center mt-10">
+                  <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#ff1e1e] mb-6">
+                     Por apenas R$ 9,99
+                  </p>
+                  <button class="bg-[#ff1e1e] hover:bg-red-700 text-white font-bold py-4 px-12 rounded-xl transition duration-300 ease-in-out text-xl sm:text-2xl shadow-lg">
+                  QUERO GARANTIR!
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
+         <!-- Primeira imagem -->
+         <img
+            src="assets/imagem24.jpg"
+            alt="12 Segredos Para Deixar Mulheres Loucas Por Você"
+            class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
+            />
+   
+       
+      </div>
+      <section
+         class="relative py-20 px-6 sm:px-12 bg-gradient-to-b from-black via-[#1a0000] to-black text-center"
+         >
+         <div
+            class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12"
+            >
+            <!-- Conteúdo (esquerda) -->
+            <div class="text-left">
+               <!-- Título -->
+               <h2
+                  class="text-3xl sm:text-4xl md:text-4xl font-extrabold text-white leading-snug mb-6 tracking-tight"
+                  >
+                  ELA NÃO É "ESPECIAL".<br />
+                  <span class="text-red-500">VOCÊ QUE É.</span>
+               </h2>
+               <!-- Texto -->
+               <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
+                  Entenda de uma vez, quando você coloca ela no trono, é o momento
+                  que ela te bota no bolso. O rei sempre veio na frente da rainha.
+                  Pare de inverter a ordem das coisas. Comece já a entender o porque
+                  a maior parte dos homens ainda se rastejam atrás de mulheres que
+                  se ajoelham pra outros caras.
+               </h2>
+            </div>
+            <!-- Imagem (direita) -->
+            <div class="flex justify-center">
+               <div class="relative border-2 border-red-500 rounded-lg p-1">
+                  <img
+                     src="assets/imagem11.jpg"
+                     alt="Imagem ilustrativa"
+                     class="rounded-md w-full h-auto object-cover shadow-lg"
+                     />
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="py-16 sm:py-20 px-6 sm:px-12 bg-black text-center">
+         <!-- Título -->
+         <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ff1e1e] mb-6 tracking-tight">
+            DESAFIO DO MÉNAGE PERFEITO
+         </h2>
+         <p class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-14">
+            ENTRE NA EXPERIÊNCIA!
+         </p>
+         <div class="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto rounded-xl overflow-hidden text-left gap-10 md:gap-14">
+            <!-- FOTO -->
+            <div class="md:w-1/2 flex justify-center bg-black p-4 sm:p-6">
+               <img
+                  src="assets/produto2.jpg"
+                  alt="Desafio do Ménage Perfeito"
+                  class="w-full max-w-lg md:max-w-2xl lg:max-w-3xl rounded-2xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out"
+                  />
+            </div>
+            <!-- CONTEÚDO -->
+            <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-black">
+               <!-- TEXTO -->
+               <p class="text-gray-200 text-lg sm:text-xl md:text-2xl mb-6 leading-relaxed font-medium">
+                  <strong><span class="text-[#ff1e1e]">O Desafio do Ménage Perfeito</span> é a continuação da trajetória do homem que quer viver <span class="text-[#ff1e1e]">TODO SEU POTENCIAL.</span><br><br>
+                  Não importa se você já tem uma relação, é <span class="text-[#ff1e1e]">casado, solteiro ou namora</span> — você vai aprender como <span class="text-[#ff1e1e]">entrar na mente dela e fazer ela sentir a vontade de ter a experiência a três.</span><br><br>
+                  <span class="text-[#ff1e1e]">Aprenda a ser quem manda</span>, e parar de ser mandado.</strong>
+               </p>
+               <!-- LISTA -->
+               <!-- LISTA REAJUSTADA -->
+               <ul class="space-y-4 text-lg sm:text-xl md:text-2xl leading-relaxed font-semibold">
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white">
+                     Estratégias passo-a-passo para <strong class="text-[#ff1e1e]">levar duas mulheres</strong> pra casa no primeiro dia.
+                     </span>
+                  </li>
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white">
+                     Como fazer a <strong class="text-[#ff1e1e]">SUA MULHER</strong> sentir vontade de ficar com outra mulher, despertando desejo e curiosidade.
+                     </span>
+                  </li>
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white">
+                     Técnicas para que a <strong class="text-[#ff1e1e]">SUA MULHER</strong> vá pra guerra e te traga mais mulheres sem esforço.
+                     </span>
+                  </li>
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white">
+                     <strong class="text-[#ff1e1e]">Domínio total:</strong> a técnica do Ménage perfeito para que elas queiram repetir sempre.
+                     </span>
+                  </li>
+               </ul>
+               <!-- PREÇO + BOTÃO -->
+               <div class="text-center mt-10">
+                  <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#ff1e1e] mb-6">
+                     🔥 Por apenas R$ 29,99 🔥
+                  </p>
+                  <button class="bg-[#ff1e1e] hover:bg-red-700 text-white font-bold py-4 px-12 rounded-xl transition duration-300 ease-in-out text-xl sm:text-2xl shadow-lg">
+                  🚀 QUERO PARTICIPAR!
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
+         <!-- Primeira imagem -->
+         <img
+            src="assets/imagem29.jpg"
+            alt="Imagem destaque"
+            class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
+            />
+      </div>
+      <section
+         class="relative py-20 px-6 sm:px-12 bg-gradient-to-b from-black via-[#1a0000] to-black text-center"
+         >
+         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <!-- Conteúdo (esquerda) -->
+            <div class="text-left">
+               <!-- Título principal -->
+               <h2
+                  class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#ff1e1e] mb-6 leading-snug uppercase"
+                  >
+                  ELA NUNCA VAI TE CONFESSAR ISSO
+               </h2>
+               <!-- Texto introdutório -->
+               <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
+                  Ela quer mostrar que tem o poder,
+               </h2>
+               <!-- Destaque central -->
+               <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
+                  Mas no fundo toda mulher quer um homem que
+                  <span class="text-[#ff1e1e]">MANDA NA P*RRA TODA</span>.
+               </h2>
+               <!-- Complemento -->
+               <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
+                  Desde o começo dos tempos o homem é a energia dominante, e o erro do
+                  principiante é acreditar que, por causa dos tempos modernos, ela que
+                  manda. Isso é tudo fachada. <br /><br />
+                  Aprenda a ler uma mulher como um livro, e ser o autor que continua essa
+                  história. O poder é seu — e se ainda não é, entenda como agarrar ele de
+                  volta.
+               </h2>
+            </div>
+            <!-- Imagem (direita) -->
+            <div class="flex justify-center">
+               <div class="relative border-2 border-[#ff1e1e] rounded-lg p-1">
+                  <img
+                     src="assets/imagem26.jpg"
+                     alt="Imagem ilustrativa"
+                     class="rounded-md w-full h-auto object-cover"
+                     />
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
+         <!-- Primeira imagem -->
+         <img
+            src="assets/imagem31.jpg"
+            alt="12 Segredos Para Deixar Mulheres Loucas Por Você"
+            class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
+            />
+         <!-- Segunda imagem -->
+      </div>
+      <section class="py-16 sm:py-20 px-6 sm:px-12 bg-black text-center">
+         <!-- Título -->
+         <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ff1e1e] mb-6 tracking-tight">
+            JOGANDO NO NÍVEL DO NEYMAR
+         </h2>
+         <p class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-14">
+            APROVEITE!
+         </p>
+         <div class="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto rounded-xl overflow-hidden text-left gap-10 md:gap-14">
+            <!-- FOTO -->
+            <div class="md:w-1/2 flex justify-center bg-black p-4 sm:p-6">
+               <img
+                  src="assets/produto1.jpg"
+                  alt="Jogando no Nível do Neymar"
+                  class="w-full max-w-md md:max-w-lg lg:max-w-xl rounded-2xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out"
+                  />
+            </div>
+            <!-- CONTEÚDO -->
+            <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-black">
+               <!-- Título chamativo -->
+               <h3 class="text-3xl sm:text-4xl font-extrabold text-white uppercase mb-6 leading-snug">
+                  Nunca mais cair no <span class="text-[#ff1e1e]">bla-bla-bla de uma mulher</span>.<br>
+                  As mulheres que você deseja, <span class="text-[#ff1e1e]">pra você sempre de 4</span>.
+               </h3>
+               <!-- Texto impactante -->
+               <p class="text-gray-200 text-lg sm:text-xl md:text-2xl mb-6 leading-relaxed font-medium">
+                  <strong>Ela não quer um idiota que faz tudo pra ela.</strong><br>
+                  <span class="text-[#ff1e1e] font-bold">Isso é um funcionário, não um homem de verdade.</span><br>
+                  <strong>Ela quer ser dominada, pelo homem que aperta os gatilhos certos na cabeça dela e deixa ela submissa.</strong>
+               </p>
+               <!-- Lista de destaques (opcional) -->
+               <ul class="space-y-4 text-lg sm:text-xl md:text-2xl leading-relaxed font-semibold mb-6">
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white">Domine a atenção e o desejo de qualquer mulher <strong class="text-[#ff1e1e]">desde o primeiro contato</strong>.</span>
+                  </li>
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white">Use <strong class="text-[#ff1e1e]">gatilhos psicológicos</strong> para que ela queira se submeter e obedecer.</span>
+                  </li>
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white">Torne-se o homem que as mulheres <strong class="text-[#ff1e1e]">não conseguem resistir</strong>.</span>
+                  </li>
+               </ul>
+               <!-- Preço + botão -->
+               <div class="text-center mt-6">
+                  <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#ff1e1e] mb-4">
+                     🔥 Por apenas R$ 49,99 🔥
+                  </p>
+                  <button class="bg-[#ff1e1e] hover:bg-red-700 text-white font-bold py-4 px-12 rounded-xl transition duration-300 ease-in-out text-xl sm:text-2xl shadow-lg hover:shadow-red-500/40">
+                  🚀 QUERO GARANTIR!
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="relative py-20 px-6 sm:px-12 bg-gradient-to-b from-black via-[#1a0000] to-black text-center">
+         <div class="max-w-5xl mx-auto">
+            <!-- Imagens lado a lado -->
+            <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
+               <!-- Primeira imagem -->
+              
+               <img
+                  src="assets/imagem18.jpg"
+                  alt="Imagem destaque"
+                  class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
+                  />
+               
+            </div>
+            <!-- Subtítulo -->
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
+               Descubra técnicas poderosas para entender a mente e o corpo feminino,
+               criar desejo irresistível e conduzir momentos de prazer intenso. Aprenda
+               como despertar paixão, aumentar a excitação e se tornar inesquecível na
+               vida sexual dela.
+            </h2>
+            <!-- Texto Laranja -->
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold leading-relaxed mb-4 sm:mb-6 tracking-tight">
+               <span class="text-[#ff1e1e]">Tamanho do peito, da bunda, altura ou cor do cabelo, quem escolhe é você.
+               Entenda, você merece a mulher que deseja, e o que te afasta de conseguir
+               isso é ter o conhecimento pra ter elas pensando em você todo santo dia.</span>
+               <br />
+               <span class="underline">Aprenda isso agora</span>
+            </h2>
+            <!-- Autor e ações -->
+            <div class="flex flex-wrap items-center justify-between mb-6 gap-4">
+               <div>
+                  <button
+                     class="flex items-center gap-2 text-gray-400 hover:text-white transition"
+                     >
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 sm:h-7 sm:w-7"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        >
+                        <path
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           d="M4 12v.01M12 4v.01M20 12v.01M12 20v.01M5.64 5.64l.01.01M18.36 18.36l.01.01M5.64 18.36l.01-.01M18.36 5.64l.01-.01"
+                           />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="mb-8 flex flex-col md:flex-row justify-center items-center gap-6">
+         <!-- Primeira imagem -->
+         <img
+            src="assets/imagem38.jpg"
+            alt="12 Segredos Para Deixar Mulheres Loucas Por Você"
+            class="w-80 h-80 md:w-96 md:h-96 object-cover rounded-lg border-4 border-[#ff1e1e] shadow-lg"
+            />
+         <!-- Segunda imagem -->
+         
+      </div>
+      <section class="py-16 sm:py-20 px-6 sm:px-12 bg-black text-center">
+         <!-- Título -->
+         <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ff1e1e] mb-6 tracking-tight">
+            O MANUAL PROIBIDO DO PRAZER
+         </h2>
+         <p class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-14">
+            SÓ HOJE!
+         </p>
+         <div class="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto rounded-xl overflow-hidden text-left gap-10 md:gap-14">
+            <!-- FOTO -->
+            <div class="md:w-1/2 flex justify-center bg-black p-4 sm:p-6">
+               <img
+                  src="assets/imagem8.jpg"
+                  alt="O Manual Proibido do Prazer"
+                  class="w-full max-w-md md:max-w-lg lg:max-w-xl rounded-2xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out"
+                  />
+            </div>
+            <!-- CONTEÚDO -->
+            <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-black">
+               <!-- Texto impactante -->
+               <p class="text-gray-200 text-lg sm:text-xl md:text-2xl mb-6 leading-relaxed font-medium">
+                  <strong>O<span class="text-[#ff1e1e]"> Manual Proibido do Prazer</span> é o passo final para o <span class="text-[#ff1e1e]">homem que quer ser um maestro em enlouquecer e manipular qualquer mulher. </span> 
+                  <span class="text-[#ff1e1e]">Aqui você recebe o DNA masculino completo</span>, tornando-se a versão mais quente e dominante de você todos os dias.</strong>
+               </p>
+               <p class="text-gray-200 text-lg sm:text-xl md:text-2xl mb-6 leading-relaxed font-medium">
+                  <strong>Contexto, técnicas e estratégias que completam sua jornada de poder e sedução. Seja inesquecível em qualquer situação e faça a concorrência chorar.
+               </p>
+               <!-- Lista de destaques -->
+               <ul class="space-y-4 text-lg sm:text-xl md:text-2xl leading-relaxed font-semibold mb-6">
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white">Dono da putaria: <strong class="text-[#ff1e1e]">escolha as mulheres que você quiser</strong> sem perder tempo.</span>
+                  </li>
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white"><strong class="text-[#ff1e1e]">DNA masculino:</strong> seja o homem que sabe se vestir, falar e agir como um rei.</span>
+                  </li>
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white"><strong class="text-[#ff1e1e]">Tiro da sniper:</strong> nunca mais errar e escolher a mulher errada.</span>
+                  </li>
+                  <li class="flex items-start">
+                     <span class="text-[#ff1e1e] text-2xl mr-3">✔</span>
+                     <span class="text-white"><strong class="text-[#ff1e1e]">Áurea superior:</strong> seja inesquecível em qualquer ocasião.</span>
+                  </li>
+               </ul>
+               <!-- Preço + botão -->
+               <div class="text-center mt-6">
+                  <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#ff1e1e] mb-4">
+                     🔥 Por apenas R$ 79,99 🔥
+                  </p>
+                  <button class="bg-[#ff1e1e] hover:bg-red-700 text-white font-bold py-4 px-12 rounded-xl transition duration-300 ease-in-out text-xl sm:text-2xl shadow-lg hover:shadow-red-500/40">
+                  🚀 QUERO GARANTIR!
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section
+         class="relative py-20 px-6 bg-[#330000] text-center"
+         style="
+         background-image: linear-gradient(to top, rgb(34, 0, 0), rgb(0, 0, 0)),
+         url('assets/imagem2.png');
+         "
+         >
+         <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-12">
+            Completando todos,<br /> <span class="text-yellow-500">você ja virou EXPERT em:</span> 
+         </h2>
+         <div
+            class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
+            >
+            <div
+               class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
+               >
+               <div class="h-[300px] w-full overflow-hidden">
+                  <img
+                     src="assets/imagem19.jpg"
+                     alt="Jogo Múltiplo"
+                     class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                     />
+               </div>
+               <div
+                  class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
+                  >
+                  <h3 class="font-semibold text-lg mb-1">JOGO MÚLTIPLO</h3>
+                  <p class="text-gray-300">
+                     Ter as mulheres que você quer, quando você quer.
+                  </p>
+               </div>
+            </div>
+            <div
+               class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
+               >
+               <div class="h-[300px] w-full overflow-hidden">
+                  <img
+                     src="assets/imagem5.jpg"
+                     alt="Manipular o Tesão"
+                     class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                     />
+               </div>
+               <div
+                  class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
+                  >
+                  <h3 class="font-semibold text-lg mb-1">MANIPULAR O TESÃO</h3>
+                  <p class="text-gray-300">
+                     Apertar os gatilhos certos pra gerar tesão o mais rápido e com o
+                     máximo de impacto possível.
+                  </p>
+               </div>
+            </div>
+            <div
+               class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
+               >
+               <div class="h-[300px] w-full overflow-hidden">
+                  <img
+                     src="assets/imagem16.jpg"
+                     alt="Pressão sem Tensão"
+                     class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                     />
+               </div>
+               <div
+                  class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
+                  >
+                  <h3 class="font-semibold text-lg mb-1">PRESSÃO SEM TENSÃO</h3>
+                  <p class="text-gray-300">
+                     Intimidar sem passar do ponto. Ela sente o perigo, mas não sente
+                     medo, sente atração.
+                  </p>
+               </div>
+            </div>
+            <div
+               class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
+               >
+               <div class="h-[300px] w-full overflow-hidden">
+                  <img
+                     src="assets/imagem9.jpg"
+                     alt="Repetição de Memória"
+                     class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                     />
+               </div>
+               <div
+                  class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
+                  >
+                  <h3 class="font-semibold text-lg mb-1">REPETIÇÃO DE MEMÓRIA</h3>
+                  <p class="text-gray-300">
+                     Ela pode fazer a força que for, mas você já é o vício favorito
+                     dela. Nunca mais ela para de pensar em você.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="mt-12 text-white text-lg font-semibold">
+            E MUITO MAIS!<br />
+            <span class="text-yellow-400"
+               >Ensinamento completo, direto e sem curvas.</span
+               >
+            O conhecimento que você precisa pra nunca mais falhar na missão. Sinta
+            o efeito desde o primeiro dia.
+         </div>
+         <div
+            class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"
+            ></div>
+      </section>
+      <!-- Oferta do Pack -->
       <div
-        class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
-      >
-    
-        <div
-          class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
-        >
-          <div class="h-[300px] w-full overflow-hidden">
+         class="mt-12 bg-[#141416] text-white rounded-xl p-6 sm:p-8 max-w-3xl mx-auto shadow-xl text-center"
+         >
+         <h3 class="text-2xl sm:text-3xl font-bold mb-4">
+            O PACK COMPLETO DE
+            <span class="line-through text-gray-400">R$ 170</span> POR APENAS
+            <span class="text-red-500 font-bold">R$ 99,99</span>!
+         </h3>
+         <p class="mb-6 text-sm sm:text-base">
+            Aproveite para ter a saga completa e garantir todo potencial de
+            crescer seu jogo. Nunca mais aceite ser menos que um rei. <br />
+            <span class="font-semibold text-yellow-400">Comece agora.</span>
+         </p>
+         <a
+            href="#"
+            class="inline-block bg-red-600 hover:bg-red-700 text-white py-3 px-6 sm:px-8 rounded-full font-bold text-lg shadow-lg transition transform hover:scale-105"
+            >
+         QUERO O PACK COMPLETO
+         </a>
+         <!-- Galeria de capas -->
+         <div class="mt-6 flex flex-wrap justify-center gap-4">
             <img
-              src="assets/imagem19.jpg"
-              alt="Jogo Múltiplo"
-              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div
-            class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
-          >
-            <h3 class="font-semibold text-lg mb-1">JOGO MÚLTIPLO</h3>
-            <p class="text-gray-300">
-              Ter as mulheres que você quer, quando você quer.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
-        >
-          <div class="h-[300px] w-full overflow-hidden">
+               src="assets/produto3.jpg"
+               alt="Livro 1"
+               class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
+               />
             <img
-              src="assets/imagem5.jpg"
-              alt="Manipular o Tesão"
-              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div
-            class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
-          >
-            <h3 class="font-semibold text-lg mb-1">MANIPULAR O TESÃO</h3>
-            <p class="text-gray-300">
-              Apertar os gatilhos certos pra gerar tesão o mais rápido e com o
-              máximo de impacto possível.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
-        >
-          <div class="h-[300px] w-full overflow-hidden">
+               src="assets/produto2.jpg"
+               alt="Livro 2"
+               class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
+               />
             <img
-              src="assets/imagem16.jpg"
-              alt="Pressão sem Tensão"
-              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div
-            class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
-          >
-            <h3 class="font-semibold text-lg mb-1">PRESSÃO SEM TENSÃO</h3>
-            <p class="text-gray-300">
-              Intimidar sem passar do ponto. Ela sente o perigo, mas não sente
-              medo, sente atração.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 bg-black/70"
-        >
-          <div class="h-[300px] w-full overflow-hidden">
+               src="assets/produto1.jpg"
+               alt="Livro 3"
+               class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
+               />
             <img
-              src="assets/imagem9.jpg"
-              alt="Repetição de Memória"
-              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-          </div>
-          <div
-            class="text-white p-4 text-sm h-[150px] flex flex-col justify-center"
-          >
-            <h3 class="font-semibold text-lg mb-1">REPETIÇÃO DE MEMÓRIA</h3>
-            <p class="text-gray-300">
-              Ela pode fazer a força que for, mas você já é o vício favorito
-              dela. Nunca mais ela para de pensar em você.
-            </p>
-          </div>
-        </div>
+               src="assets/imagem8.jpg"
+               alt="Livro 4"
+               class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
+               />
+         </div>
+         <p class="mt-2 text-gray-400 text-sm">Pack com 4 livros</p>
       </div>
-
-      <div class="mt-12 text-white text-lg font-semibold">
-        E MUITO MAIS!<br />
-        <span class="text-yellow-400"
-          >Ensinamento completo, direto e sem curvas.</span
-        >
-        O conhecimento que você precisa pra nunca mais falhar na missão. Sinta
-        o efeito desde o primeiro dia.
-      </div>
-      <div
-        class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"
-      ></div>
-    </section>
-
-    <!-- Oferta do Pack -->
-    <div
-      class="mt-12 bg-[#141416] text-white rounded-xl p-6 sm:p-8 max-w-3xl mx-auto shadow-xl text-center"
-    >
-      <h3 class="text-2xl sm:text-3xl font-bold mb-4">
-        O PACK COMPLETO DE
-        <span class="line-through text-gray-400">R$ 170</span> POR APENAS
-        <span class="text-red-500 font-bold">R$ 99,99</span>!
-      </h3>
-      <p class="mb-6 text-sm sm:text-base">
-        Aproveite para ter a saga completa e garantir todo potencial de
-        crescer seu jogo. Nunca mais aceite ser menos que um rei. <br />
-        <span class="font-semibold text-yellow-400">Comece agora.</span>
-      </p>
-      <a
-        href="#"
-        class="inline-block bg-red-600 hover:bg-red-700 text-white py-3 px-6 sm:px-8 rounded-full font-bold text-lg shadow-lg transition transform hover:scale-105"
-      >
-        QUERO O PACK COMPLETO
-      </a>
-
-      <!-- Galeria de capas -->
-      <div class="mt-6 flex flex-wrap justify-center gap-4">
-        <img
-          src="assets/produto3.jpg"
-          alt="Livro 1"
-          class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
-        />
-        <img
-          src="assets/produto2.jpg"
-          alt="Livro 2"
-          class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
-        />
-        <img
-          src="assets/produto1.jpg"
-          alt="Livro 3"
-          class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
-        />
-        <img
-          src="assets/imagem8.jpg"
-          alt="Livro 4"
-          class="w-20 sm:w-28 rounded-lg shadow-md hover:scale-105 transition"
-        />
-      </div>
-
-      <p class="mt-2 text-gray-400 text-sm">Pack com 4 livros</p>
-    </div>
-  </section> 
-
-    <!-- Call to Action -->
-
-    <section class="relative py-20 px-6 text-center bg-[#000000]">
-      <h2 class="text-2xl md:text-3xl font-bold text-[#ff6666] mb-12">
-        O QUE DIZEM SOBRE NÓS
-      </h2>
-
-      <!-- Swiper Container -->
-      <div class="swiper max-w-xl mx-auto">
-        <div class="swiper-wrapper">
+      </section> 
+      <!-- Call to Action -->
+      <section class="relative py-20 px-6 text-center bg-[#000000]">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#ff6666] mb-12">
+          O QUE DIZEM SOBRE NÓS
+        </h2>
+      
+        <!-- Container de Testemunhos -->
+        <div class="max-w-xl mx-auto space-y-8">
           <!-- Card 1 -->
-          <div class="swiper-slide">
-            <div class="bg-[#1a1a1a] rounded-2xl p-8 shadow-lg">
-              <img
-                src="assets/user1.jpg"
-                alt="Foto do usuário"
-                class="w-20 h-20 mx-auto rounded-full border-2 border-[#ff6666] mb-4"
-              />
-              <p class="text-gray-200 italic mb-4">
-                “Top demais! Eu sempre me achei bom na questão de conversar com as mulheres e tal, consigo pegar várias de boa, mas sempre tem onde melhorar! O manual é brabo, e sempre tem aquelas minas que são outro nível, mais difíceis de chegar. Hahahahah agora peguei a visão e tô levantando as filés.”
-              </p>
-              <span class="block text-[#ff6666] font-semibold">– Renato Carvalho S.</span>
-            </div>
+          <div class="bg-[#1a1a1a] rounded-2xl p-8 shadow-lg">
+            <img
+              src="assets/user1.jpg"
+              alt="Foto do usuário"
+              class="w-20 h-20 mx-auto rounded-full border-2 border-[#ff6666] mb-4"
+            />
+            <p class="text-gray-200 italic mb-4">
+              “Top demais! Eu sempre me achei bom na questão de conversar com as mulheres e tal, consigo pegar várias de boa, mas sempre tem onde melhorar! O manual é brabo, e sempre tem aquelas minas que são outro nível, mais difíceis de chegar. Hahahahah agora peguei a visão e tô levantando as filés.”
+            </p>
+            <span class="block text-[#ff6666] font-semibold">– Renato Carvalho S.</span>
           </div>
-          
+      
           <!-- Card 2 -->
-          <div class="swiper-slide">
-            <div class="bg-[#1a1a1a] rounded-2xl p-8 shadow-lg">
-              <img
-                src="assets/user2.jpg"
-                alt="Foto do usuário"
-                class="w-20 h-20 mx-auto rounded-full border-2 border-[#ff6666] mb-4"
-              />
-              <p class="text-gray-200 italic mb-4">
-                “Parceiro, do céu... esses caras são malucos! Kkkkkkkk mano, juro que não acredito que alguém realmente escreveu um livro assim. Vocês são fodas! Aprendi a manipular mesmo, sem chororô, fazer a mina ficar na bota o tempo planejado e depois: tchau. Recomendo muito.”
-              </p>
-              <span class="block text-[#ff6666] font-semibold">– Lucas C.</span>
-            </div>
+          <div class="bg-[#1a1a1a] rounded-2xl p-8 shadow-lg">
+            <img
+              src="assets/user2.jpg"
+              alt="Foto do usuário"
+              class="w-20 h-20 mx-auto rounded-full border-2 border-[#ff6666] mb-4"
+            />
+            <p class="text-gray-200 italic mb-4">
+              “Parceiro, do céu... esses caras são malucos! Kkkkkkkk mano, juro que não acredito que alguém realmente escreveu um livro assim. Vocês são fodas! Aprendi a manipular mesmo, sem chororô, fazer a mina ficar na bota o tempo planejado e depois: tchau. Recomendo muito.”
+            </p>
+            <span class="block text-[#ff6666] font-semibold">– Lucas C.</span>
           </div>
-          
+      
           <!-- Card 3 -->
-          <div class="swiper-slide">
-            <div class="bg-[#1a1a1a] rounded-2xl p-8 shadow-lg">
-              <img
-                src="assets/user3.jpg"
-                alt="Foto do usuário"
-                class="w-20 h-20 mx-auto rounded-full border-2 border-[#ff6666] mb-4"
-              />
-              <p class="text-gray-200 italic mb-4">
-                “O que eu mais gostei foi o Desafio do Ménage, porque de pegar mulher eu já manjava, mas pegar duas ao mesmo tempo não é pra amador. Agora entendo onde apertar o botão certo e o jogo acontece de verdade. Recomendo pra quem nunca fez ou pra quem já fez e quer repetir sempre. Nada melhor que ficar com 2 minas juntas, na moral.”
-              </p>
-              <span class="block text-[#ff6666] font-semibold">– Marcelo B.</span>
+          <div class="bg-[#1a1a1a] rounded-2xl p-8 shadow-lg">
+            <img
+              src="assets/user3.jpg"
+              alt="Foto do usuário"
+              class="w-20 h-20 mx-auto rounded-full border-2 border-[#ff6666] mb-4"
+            />
+            <p class="text-gray-200 italic mb-4">
+              “O que eu mais gostei foi o Desafio do Ménage, porque de pegar mulher eu já manjava, mas pegar duas ao mesmo tempo não é pra amador. Agora entendo onde apertar o botão certo e o jogo acontece de verdade. Recomendo pra quem nunca fez ou pra quem já fez e quer repetir sempre. Nada melhor que ficar com 2 minas juntas, na moral.”
+            </p>
+            <span class="block text-[#ff6666] font-semibold">– Marcelo B.</span>
+          </div>
+        </div>
+      </section>
+      
+      <!-- SwiperJS Script -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+         const swiper = new Swiper(".swiper", {
+           slidesPerView: 1,
+           spaceBetween: 30,
+           pagination: {
+             el: ".swiper-pagination",
+             clickable: true,
+           },
+         });
+      </script>
+      <!-- Footer -->
+      <footer class="bg-zinc-900 text-gray-400 py-8 px-4">
+         <div
+            class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
+            >
+            <!-- Texto de direitos -->
+            <p class="text-sm text-center md:text-left">
+               &copy; 2025 Prazer Proibido. Todos os direitos reservados.
+            </p>
+            <!-- Links do footer -->
+            <div class="flex flex-col md:flex-row items-center gap-2 md:gap-6">
+               <a href="#" class="hover:text-white transition"
+                  >Política de Privacidade</a
+                  >
+               <a href="#" class="hover:text-white transition">Termos de Uso</a>
+               <a href="#" class="hover:text-white transition">Contato</a>
             </div>
-          </div>          
-        </div>
-
-        <!-- Paginação -->
-        <div class="swiper-pagination mt-6"></div>
-      </div>
-    </section>
-
-    <!-- SwiperJS Script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-
-    <!-- Footer -->
-    <footer class="bg-zinc-900 text-gray-400 py-8 px-4">
-      <div
-        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
-      >
-        <!-- Texto de direitos -->
-        <p class="text-sm text-center md:text-left">
-          &copy; 2025 Prazer Proibido. Todos os direitos reservados.
-        </p>
-
-        <!-- Links do footer -->
-        <div class="flex flex-col md:flex-row items-center gap-2 md:gap-6">
-          <a href="#" class="hover:text-white transition"
-            >Política de Privacidade</a
-          >
-          <a href="#" class="hover:text-white transition">Termos de Uso</a>
-          <a href="#" class="hover:text-white transition">Contato</a>
-        </div>
-
-        <!-- Desenvolvido por WSS -->
-        <div class="flex items-center gap-2">
-          <span class="text-sm">Desenvolvido por</span>
-          <img
-            src="./assets/logo-org.png"
-            alt="WSS Solution Logo"
-            class="h-8 w-8 rounded-full object-cover bg-white p-1"
-          />
-        </div>
-      </div>
-    </footer>
-  </body>
+            <!-- Desenvolvido por WSS -->
+            <div class="flex items-center gap-2">
+               <span class="text-sm">Desenvolvido por</span>
+               <img
+                  src="./assets/logo-org.png"
+                  alt="WSS Solution Logo"
+                  class="h-8 w-8 rounded-full object-cover bg-white p-1"
+                  />
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>
